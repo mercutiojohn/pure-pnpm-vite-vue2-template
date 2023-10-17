@@ -8,7 +8,7 @@
      </a>
      <h1>Hello Vite!</h1>
      <div class="card">
-       <button type="button" @click="counter++">counter is {{counter}}</button>
+       <el-button type="button" @click="counter++">counter is {{counter}}</el-button>
      </div>
      <p class="read-the-docs">
        Click on the Vite logo to learn more
