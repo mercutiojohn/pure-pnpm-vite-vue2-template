@@ -7,9 +7,14 @@
        <img src="/javascript.svg" class="logo vanilla" alt="JavaScript logo" />
      </a>
      <h1>Hello Vite!</h1>
-     <div class="card">
+     <!-- <div class="card">
        <button type="button" @click="counter++">counter is {{counter}}</button>
-     </div>
+     </div> -->
+     <nav>
+       <router-link to="/">Home</router-link> |
+       <router-link to="/about">About</router-link>
+     </nav>
+     <router-view />
      <p class="read-the-docs">
        Click on the Vite logo to learn more
      </p>
@@ -19,7 +24,7 @@
 <script>
 
 export default {
-  name:"App",
+  name: "App",
   components: {},
   data() {
     return {
