@@ -9,6 +9,9 @@ import store from "@/store"
 // VueRouter
 import router from '@/router'
 
+// plugins
+import '@/plugins'
+
 Vue.config.productionTip = false
 
 new Vue({
