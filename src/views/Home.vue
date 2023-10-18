@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <button type="button" @click="counter++">counter is {{counter}}</button>
+    <el-button type="button" @click="counter++">counter is {{counter}}</el-button>
    </div>
 </template>
 
