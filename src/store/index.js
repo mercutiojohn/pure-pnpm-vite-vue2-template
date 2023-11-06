@@ -1,15 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import d2admin from './modules/d2admin'
+
 Vue.use(Vuex)
 
-const store = new Vuex.Store(
-  {
-    state: {},
-    getters: {},
-    mutations: {},
-    actions: {}
+export default new Vuex.Store({
+  modules: {
+    d2admin
   }
-)
-
-export default store
+})

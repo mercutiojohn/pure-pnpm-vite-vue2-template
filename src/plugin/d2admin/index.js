@@ -4,11 +4,11 @@ import 'element-ui/lib/theme-chalk/index.css'
 // flex 布局库
 import 'flex.css'
 // 组件
-import '@/components'
+import '@/components/index.js'
 // svg 图标
 import '@/assets/svg-icons'
 // 国际化
-import i18n from '@/i18n.js'
+import i18n from '@/plugin/i18n/index.js'
 
 // 功能插件
 import pluginError from '@/plugin/error'
