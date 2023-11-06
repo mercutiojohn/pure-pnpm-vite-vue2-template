@@ -14,5 +14,9 @@ export default {
     alias: {
       "@": resolve(__dirname, "./src"),
     },
+  },
+
+  define: {
+    'process.env': process.env,
   }
 }
