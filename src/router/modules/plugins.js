@@ -10,13 +10,13 @@ export default {
   redirect: { name: 'demo-plugins-index' },
   component: layoutHeaderAside,
   children: [
-    { path: 'clipboard-polyfill', name: 'demo-plugins-clipboard-polyfill', component: () => import('@/views/demo/plugins/clipboard-polyfill'), meta: { ...meta, title: '剪贴板访问' } },
-    { path: 'day', name: 'demo-plugins-day', component: () => import('@/views/demo/plugins/day'), meta: { ...meta, title: '日期计算' } },
+    { path: 'clipboard-polyfill', name: 'demo-plugins-clipboard-polyfill', component: () => import('@/views/demo/plugins/clipboard-polyfill/index.vue'), meta: { ...meta, title: '剪贴板访问' } },
+    { path: 'day', name: 'demo-plugins-day', component: () => import('@/views/demo/plugins/day/index.vue'), meta: { ...meta, title: '日期计算' } },
     { path: 'export/table', name: 'demo-plugins-export-table', component: () => import('@/views/demo/plugins/export/table.vue'), meta: { ...meta, title: '导出表格' } },
     { path: 'export/txt', name: 'demo-plugins-export-txt', component: () => import('@/views/demo/plugins/export/txt.vue'), meta: { ...meta, title: '导出文本' } },
     { path: 'import/csv', name: 'demo-plugins-import-csv', component: () => import('@/views/demo/plugins/import/csv.vue'), meta: { ...meta, title: '导入 csv' } },
     { path: 'import/xlsx', name: 'demo-plugins-import-xlsx', component: () => import('@/views/demo/plugins/import/xlsx.vue'), meta: { ...meta, title: '导入 xlsx' } },
-    { path: 'index', name: 'demo-plugins-index', component: () => import('@/views/demo/plugins/index'), meta: { ...meta, title: '插件首页' } },
-    { path: 'js-cookie', name: 'demo-plugins-js-cookie', component: () => import('@/views/demo/plugins/js-cookie'), meta: { ...meta, title: 'Cookie' } }
+    { path: 'index', name: 'demo-plugins-index', component: () => import('@/views/demo/plugins/index/index.vue'), meta: { ...meta, title: '插件首页' } },
+    { path: 'js-cookie', name: 'demo-plugins-js-cookie', component: () => import('@/views/demo/plugins/js-cookie/index.vue'), meta: { ...meta, title: 'Cookie' } }
   ]
 }

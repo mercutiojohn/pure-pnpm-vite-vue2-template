@@ -20,7 +20,7 @@ function handleError (error) {
     }
   })
   // 打印到控制台
-  if (process.env.NODE_ENV === 'development') {
+  if (import.meta.env.MODE === 'development') {
     util.log.danger('>>>>>> Error >>>>>>')
     console.log(error)
   }
@@ -129,7 +129,7 @@ function createRequest (service) {
         'Content-Type': get(config, 'headers.Content-Type', 'application/json')
       },
       timeout: 5000,
-      baseURL: process.env.VITE_APP_API,
+      baseURL: import.meta.env.VITE_APP_API,
       data: {}
     }
     const option = merge(configDefault, config)

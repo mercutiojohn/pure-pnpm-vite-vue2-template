@@ -13,7 +13,7 @@ const util = {
  * @param {String} title 标题
  */
 util.title = function (titleText) {
-  const processTitle = process.env.VITE_APP_TITLE || 'D2Admin'
+  const processTitle = import.meta.env.VITE_APP_TITLE || 'D2Admin'
   window.document.title = `${processTitle}${titleText ? ` | ${titleText}` : ''}`
 }
 

@@ -23,6 +23,9 @@ dependencies:
   better-scroll:
     specifier: ^1.15.2
     version: 1.15.2
+  clipboard-polyfill:
+    specifier: ^2.8.6
+    version: 2.8.6
   countup.js:
     specifier: ^2.3.2
     version: 2.3.2
@@ -1815,6 +1818,10 @@ packages:
       isobject: 3.0.1
       static-extend: 0.1.2
     dev: true
+
+  /clipboard-polyfill@2.8.6:
+    resolution: {integrity: sha512-kz/1ov+PXsBpGnW9XJH3dLWdYj12FpXqO89Dngm/GRPoI36E/tnYs6N0YPTEhxM9WHAlFiN5eoyIVuv5nzKXvg==}
+    dev: false
 
   /clone@2.1.2:
     resolution: {integrity: sha512-3Pe/CF1Nn94hyhIYpjtiLhdCoEoz0DqQ+988E9gmeEdQZlojxnOb74wctFyuwWQHzqyf9X7C7MG8juUpqBJT8w==}

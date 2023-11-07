@@ -21,9 +21,9 @@ export default {
     // https://cn.vuejs.org/v2/api/#productionTip
     Vue.config.productionTip = false
     // 当前环境
-    Vue.prototype.$env = process.env.NODE_ENV
+    Vue.prototype.$env = import.meta.env.MODE
     // 当前的 baseUrl
-    Vue.prototype.$baseUrl = process.env.BASE_URL
+    Vue.prototype.$baseUrl = import.meta.env.BASE_URL
     // 当前版本
     Vue.prototype.$version = process.env.VUE_APP_VERSION
     // 构建时间

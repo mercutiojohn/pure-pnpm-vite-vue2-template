@@ -15,7 +15,7 @@ export default {
               vm
             }
           })
-          if (process.env.NODE_ENV !== 'development') return
+          if (import.meta.env.MODE !== 'development') return
           util.log.capsule('D2Admin', 'ErrorHandler', logType)
           util.log.danger('>>>>>> 错误信息 >>>>>>')
           console.log(info)
@@ -26,7 +26,7 @@ export default {
         })
       }
     }
-    if (process.env.NODE_ENV === 'development') {
+    if (import.meta.env.MODE === 'development') {
       Vue.config.warnHandler = writeLog('warning')
     }
     Vue.config.errorHandler = writeLog('danger')

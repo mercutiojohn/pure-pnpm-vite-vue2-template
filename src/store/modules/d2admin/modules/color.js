@@ -6,7 +6,7 @@ export default {
   namespaced: true,
   state: {
     // 颜色
-    value: process.env.VITE_APP_ELEMENT_COLOR
+    value: import.meta.env.VITE_APP_ELEMENT_COLOR
   },
   actions: {
     /**
@@ -18,7 +18,7 @@ export default {
       // // 记录上个值
       // const old = state.value
       // // store 赋值
-      // state.value = color || process.env.VITE_APP_ELEMENT_COLOR
+      // state.value = color || import.meta.env.VITE_APP_ELEMENT_COLOR
       // // 持久化
       // await dispatch('d2admin/db/set', {
       //   dbName: 'sys',
@@ -43,7 +43,7 @@ export default {
       // state.value = await dispatch('d2admin/db/get', {
       //   dbName: 'sys',
       //   path: 'color.value',
-      //   defaultValue: process.env.VITE_APP_ELEMENT_COLOR,
+      //   defaultValue: import.meta.env.VITE_APP_ELEMENT_COLOR,
       //   user: true
       // }, { root: true })
       // // 应用

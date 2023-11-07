@@ -56,8 +56,8 @@ Vue.prototype.$languages = Object.keys(messages).map(langlage => ({
 }))
 
 const i18n = new VueI18n({
-  locale: util.cookies.get('lang') || process.env.VITE_APP_I18N_LOCALE,
-  fallbackLocale: process.env.VITE_APP_I18N_FALLBACK_LOCALE,
+  locale: util.cookies.get('lang') || import.meta.env.VITE_APP_I18N_LOCALE,
+  fallbackLocale: import.meta.env.VITE_APP_I18N_FALLBACK_LOCALE,
   messages
 })
 

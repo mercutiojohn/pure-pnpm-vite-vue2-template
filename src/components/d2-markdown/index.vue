@@ -19,7 +19,7 @@ import { request } from '@/api/_service.js'
 
 function FILE_GET (url = '') {
   return request({
-    baseURL: process.env.BASE_URL,
+    baseURL: import.meta.env.BASE_URL,
     url,
     method: 'get'
   })
