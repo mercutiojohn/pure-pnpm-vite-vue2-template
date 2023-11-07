@@ -9,7 +9,7 @@
     <% for (var i in htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.css) { %>
     <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="stylesheet">
     <% } %>
-    <title><%= VUE_APP_TITLE %></title>
+    <title><%= VITE_APP_TITLE %></title>
     <style>
       html, body, #app { height: 100%; margin: 0px; padding: 0px; width: 100%; }
       .d2-home { background-color: #303133; height: 100%; display: flex; flex-direction: column; }

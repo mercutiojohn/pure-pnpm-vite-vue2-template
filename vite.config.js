@@ -44,4 +44,12 @@ export default {
   },
 
   // assetsInclude: ['**/*.md'],
+
+  base: process.env.VITE_APP_PUBLIC_PATH || '/',
+  server: {
+    // hmr: {
+    //   host: mode === 'development' ? 'localhost' : undefined,
+    // },
+    // disableHostCheck: mode === 'development',
+  },
 }

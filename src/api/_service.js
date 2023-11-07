@@ -129,7 +129,7 @@ function createRequest (service) {
         'Content-Type': get(config, 'headers.Content-Type', 'application/json')
       },
       timeout: 5000,
-      baseURL: process.env.VUE_APP_API,
+      baseURL: process.env.VITE_APP_API,
       data: {}
     }
     const option = merge(configDefault, config)

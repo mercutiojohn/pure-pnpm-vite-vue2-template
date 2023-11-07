@@ -19,7 +19,7 @@ export default {
   },
   computed: {
     show () {
-      return process.env.VUE_APP_SCOURCE_LINK === 'TRUE'
+      return process.env.VITE_APP_SCOURCE_LINK === 'TRUE'
     }
   },
   watch: {
@@ -39,7 +39,7 @@ export default {
   methods: {
     // 点击按钮的时候跳转到源代码
     handleClick () {
-      this.$open(`${process.env.VUE_APP_REPO}/blob/master/${this.path}`)
+      this.$open(`${process.env.VITE_APP_REPO}/blob/master/${this.path}`)
     }
   }
 }
