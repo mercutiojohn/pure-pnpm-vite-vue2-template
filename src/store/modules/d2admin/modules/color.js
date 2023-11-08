@@ -6,7 +6,7 @@ export default {
   namespaced: true,
   state: {
     // 颜色
-    value: import.meta.env.VITE_APP_ELEMENT_COLOR
+    // value: import.meta.env.VITE_APP_ELEMENT_COLOR
   },
   actions: {
     /**
