@@ -133,9 +133,6 @@ devDependencies:
   vite-plugin-svg-sprite:
     specifier: ^0.5.0
     version: 0.5.0(vite@4.4.5)
-  webpack-theme-color-replacer:
-    specifier: ^1.4.7
-    version: 1.4.7
 
 packages:
 
@@ -4553,10 +4550,6 @@ packages:
     resolution: {integrity: sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==}
     engines: {node: '>=12'}
     dev: false
-
-  /webpack-theme-color-replacer@1.4.7:
-    resolution: {integrity: sha512-q3zm8/z+Kli7oWov3/glL/ts6dOVuqjQG8aeEzXOgwrKdvFOCemXn8ipq2za/I9LfdwSRlsEDcLNS6P6vKlOxg==}
-    dev: true
 
   /whatwg-encoding@2.0.0:
     resolution: {integrity: sha512-p41ogyeMUrw3jWclHWTQg1k05DSVXPLcVxRTYsXUk+ZooOCZLcoYgPZ/HL/D/N+uQPOtcp1me1WhBEaX02mhWg==}

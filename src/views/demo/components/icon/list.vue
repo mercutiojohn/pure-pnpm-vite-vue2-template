@@ -23,7 +23,7 @@
 import icon from './data/index'
 export default {
   components: {
-    'd2-icon-cell': () => import('./components/d2-icon-cell')
+    'd2-icon-cell': () => import('./components/d2-icon-cell.vue')
   },
   data () {
     return {
