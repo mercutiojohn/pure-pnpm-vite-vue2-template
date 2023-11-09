@@ -10,5 +10,5 @@ import d2Admin from '@/plugin/d2admin/index'
 Vue.use(d2Admin)
 
 // 字体 Fonts
-import '@fontsource/inter'
+import '@fontsource-variable/inter'
 import '@fontsource-variable/fira-code'

@@ -1,5 +1,5 @@
 <template>
-  <d2-container type="ghost">
+  <d2-container>
     <d2-module-index-banner slot="header" v-bind="banner"/>
     <d2-module-index-menu :menu="menu"/>
   </d2-container>
@@ -12,7 +12,7 @@ export default {
     return {
       menu,
       banner: {
-        title: 'COMPONENTS',
+        title: 'Components',
         subTitle: 'D2Admin 为你提供了一些上手即用的组件'
       }
     }

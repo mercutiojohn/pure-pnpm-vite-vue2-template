@@ -14,7 +14,7 @@ dependencies:
   '@fontsource-variable/fira-code':
     specifier: ^5.0.15
     version: 5.0.15
-  '@fontsource/inter':
+  '@fontsource-variable/inter':
     specifier: ^5.0.15
     version: 5.0.15
   '@iconify-json/fluent':
@@ -821,8 +821,8 @@ packages:
     resolution: {integrity: sha512-tp56A54PjfH1RBJQ3Jdqh5cvrEHd4n302z3v6sGAnTKW9+oQgU0dK4WAMIXgDhFY35BrhpoIElowfkAT7NYJfA==}
     dev: false
 
-  /@fontsource/inter@5.0.15:
-    resolution: {integrity: sha512-/IoWYEXl8lqJEx50JqNPT+bI4VNwxb/bg2oOfvG8PiEsDsmHRFvWBVHlohBNn1+QdBf+KbAjU/gb4vlGOSsVWw==}
+  /@fontsource-variable/inter@5.0.15:
+    resolution: {integrity: sha512-CdQPQQgOVxg6ifmbrqYZeUqtQf7p2wPn6EvJ4M+vdNnsmYZgYwPPPQDNlIOU7LCUlSGaN26v6H0uA030WKn61g==}
     dev: false
 
   /@iconify-json/fluent@1.1.40:

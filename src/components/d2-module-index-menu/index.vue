@@ -1,5 +1,5 @@
 <template>
-  <transition name="fade-transverse">
+  <transition name="fade-popup">
     <div v-if="show" class="d2-module-index-menu">
       <d2-module-index-menu-group
         v-for="(item, index) in menu.children"

@@ -8,7 +8,7 @@ import '@/components/index.js'
 // svg 图标
 import '@/assets/svg-icons'
 // 国际化
-import i18n from '@/plugin/i18n/index.js'
+// import i18n from '@/plugin/i18n/index.js'
 
 // 功能插件
 import pluginError from '@/plugin/error'
@@ -25,14 +25,14 @@ export default {
     // 当前的 baseUrl
     Vue.prototype.$baseUrl = import.meta.env.BASE_URL
     // 当前版本
-    Vue.prototype.$version = process.env.VUE_APP_VERSION
+    Vue.prototype.$version = process.env.VITE_APP_VERSION
     // 构建时间
-    Vue.prototype.$buildTime = process.env.VUE_APP_BUILD_TIME
+    Vue.prototype.$buildTime = process.env.VITE_APP_BUILD_TIME
     // Element
     Vue.use(ElementUI, {
-      i18n: (key, value) => i18n.t(key, value)
+      // i18n: (key, value) => i18n.t(key, value)
     })
-    // 大小
+    // 预先指定组件大小
     Vue.prototype.$ELEMENT.size = import.meta.env.VITE_APP_ELEMENT_SIZE
     // 插件
     Vue.use(pluginError)
