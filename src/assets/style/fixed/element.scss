@@ -113,3 +113,8 @@
     height: $element-tab-height;
   }
 }
+
+.el-dropdown-menu__item {
+  display: flex;
+  align-items: center;
+}
