@@ -20,9 +20,13 @@
           <el-tab-pane
             v-for="page in opened"
             :key="page.fullPath"
-            :label="page.meta.title || '未命名'"
             :name="page.fullPath"
-            :closable="isTabClosable(page)"/>
+            :closable="isTabClosable(page)">
+            <span slot="label">
+              <!-- <d2-icon :name="page.meta.icon"/> -->
+              {{page.meta.title || '未命名'}}
+            </span>
+          </el-tab-pane>
         </el-tabs>
       </div>
     </div>
@@ -32,7 +36,7 @@
         split-button
         @click="closeAll"
         @command="command => handleControlItemClick(command)">
-        <d2-icon name="times-circle"/>
+        <d2-icon name="dismiss"/>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item command="left">
             <d2-icon name="arrow-left" class="d2-mr-10"/>
@@ -43,11 +47,11 @@
             关闭右侧
           </el-dropdown-item>
           <el-dropdown-item command="other">
-            <d2-icon name="times" class="d2-mr-10"/>
+            <d2-icon name="square-dismiss" class="d2-mr-10"/>
             关闭其它
           </el-dropdown-item>
           <el-dropdown-item command="all">
-            <d2-icon name="times-circle" class="d2-mr-10"/>
+            <d2-icon name="dismiss-square-multiple" class="d2-mr-10"/>
             全部关闭
           </el-dropdown-item>
         </el-dropdown-menu>
@@ -71,14 +75,14 @@ export default {
       contentmenuX: 0,
       contentmenuY: 0,
       contextmenuListIndex: [
-        { icon: 'times-circle', title: '关闭全部', value: 'all' }
+        { icon: 'dismiss-square-multiple', title: '关闭全部', value: 'all' }
       ],
       contextmenuList: [
-        { icon: 'refresh', title: '刷新', value: 'refresh' },
+        { icon: 'arrow-counterclockwise', title: '刷新', value: 'refresh' },
         { icon: 'arrow-left', title: '关闭左侧', value: 'left' },
         { icon: 'arrow-right', title: '关闭右侧', value: 'right' },
-        { icon: 'times', title: '关闭其它', value: 'other' },
-        { icon: 'times-circle', title: '关闭全部', value: 'all' }
+        { icon: 'square-dismiss', title: '关闭其它', value: 'other' },
+        { icon: 'dismiss-square-multiple', title: '关闭全部', value: 'all' }
       ],
       tagName: '/index'
     }
