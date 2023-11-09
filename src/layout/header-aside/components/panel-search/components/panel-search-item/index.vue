@@ -91,13 +91,13 @@ export default {
     .d2-panel-search-item__info-fullTitle {
       font-size: 10px;
       line-height: 14px;
-      color: $color-text-placehoder;
+      color: $color-text-placeholder;
     }
     .d2-panel-search-item__info-path {
       margin-bottom: 4px;
       font-size: 10px;
       line-height: 14px;
-      color: $color-text-placehoder;
+      color: $color-text-placeholder;
     }
   }
 }

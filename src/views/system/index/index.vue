@@ -42,7 +42,7 @@ export default {
     width: 120px;
   }
   .btn-group {
-    color: $color-text-placehoder;
+    color: $color-text-placeholder;
     font-size: 12px;
     line-height: 12px;
     margin-top: 0px;

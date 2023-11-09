@@ -1,9 +1,9 @@
 /* Functional Color */
-$--color-primary: #1F75CB;
-$--color-success: #A989F5;
-$--color-warning: #FC6D26;
-$--color-danger: #E24329;
-$--color-info: #A2A1A6;
+$--color-primary: $color-primary;
+$--color-success: $color-success;
+$--color-warning: $color-warning;
+$--color-danger: $color-danger;
+$--color-info: $color-info;
 
 /* Font Color */
 $--color-text-primary: #303133;

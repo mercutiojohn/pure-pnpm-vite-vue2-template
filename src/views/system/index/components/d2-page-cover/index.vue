@@ -44,7 +44,7 @@
     margin: 0px;
     margin-bottom: 10px;
     font-size: 12px;
-    color: $color-text-placehoder;
+    color: $color-text-placeholder;
   }
 }
 </style>

@@ -1,6 +1,6 @@
 // Element
 import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+// import 'element-ui/lib/theme-chalk/index.css'
 // flex 布局库
 import 'flex.css'
 // 组件
@@ -32,6 +32,8 @@ export default {
     Vue.use(ElementUI, {
       i18n: (key, value) => i18n.t(key, value)
     })
+    // 大小
+    Vue.prototype.$ELEMENT.size = import.meta.env.VITE_APP_ELEMENT_SIZE
     // 插件
     Vue.use(pluginError)
     Vue.use(pluginLog)

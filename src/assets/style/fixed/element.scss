@@ -29,3 +29,26 @@
 .el-table colgroup.gutter {
   display: table-cell !important;
 }
+// 侧边栏菜单修改
+.el-menu {
+  padding: 0.25rem;
+  box-sizing: border-box;
+}
+.el-menu--popup {
+  border-radius: 7px;
+}
+.el-menu-item,.el-submenu__title,
+.el-submenu .el-menu-item,
+.el-menu--horizontal .el-submenu  {
+  line-height: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+.el-menu--horizontal {
+  .el-menu-item,
+  .el-submenu,
+  .el-submenu .el-submenu__title {
+    height: 40px;
+    line-height: 40px;
+  }
+}

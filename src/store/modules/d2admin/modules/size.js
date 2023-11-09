@@ -55,11 +55,12 @@ export default {
      * @param {Object} context
      */
     async load ({ state, dispatch }) {
+      const size = import.meta.env.VITE_APP_ELEMENT_SIZE || 'default'
       // store 赋值
       state.value = await dispatch('d2admin/db/get', {
         dbName: 'sys',
         path: 'size.value',
-        defaultValue: 'default',
+        defaultValue: size,
         user: true
       }, { root: true })
       // 应用
