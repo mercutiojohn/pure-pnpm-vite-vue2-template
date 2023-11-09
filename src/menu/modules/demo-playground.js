@@ -1,7 +1,7 @@
 export default {
   path: '/demo/playground',
   title: '功能',
-  icon: 'flask',
+  icon: 'apps',
   children: [
     { path: '/demo/playground/index', title: '功能', icon: 'home' },
     {
@@ -24,7 +24,7 @@ export default {
     },
     {
       title: '空菜单演示',
-      icon: 'folder-o',
+      icon: 'folder',
       children: [
         {
           title: '正在开发 1',
@@ -44,7 +44,7 @@ export default {
       children: [
         { path: '/demo/playground/frame/d2-doc', title: 'D2Admin 中文文档', iconSvg: 'd2-admin' },
         { path: '/demo/playground/frame/html', title: '静态 HTML', icon: 'code' },
-        { path: '/demo/playground/frame/report', title: '构建分析', icon: 'pie-chart' }
+        { path: '/demo/playground/frame/report', title: '构建分析', icon: 'calendar-data-bar' }
       ]
     },
     {
@@ -62,14 +62,14 @@ export default {
     {
       path: '/demo/playground/store',
       title: '全局状态管理',
-      icon: 'bolt',
+      icon: 'status',
       children: [
-        { path: '/demo/playground/store/page', title: '多标签页控制', icon: 'window-restore' },
-        { path: '/demo/playground/store/menu', title: '菜单控制', icon: 'bars' },
+        { path: '/demo/playground/store/page', title: '多标签页控制', icon: 'restore' },
+        { path: '/demo/playground/store/menu', title: '菜单控制', icon: 'list' },
         { path: '/demo/playground/store/size', title: '全局尺寸', icon: 'font' },
         { path: '/demo/playground/store/ua', title: '浏览器信息', icon: 'info-circle' },
         { path: '/demo/playground/store/gray', title: '灰度模式', icon: 'eye' },
-        { path: '/demo/playground/store/fullscreen', title: '全屏', icon: 'arrows-alt' },
+        { path: '/demo/playground/store/fullscreen', title: '全屏', icon: 'full-screen-maximize' },
         { path: '/demo/playground/store/theme', title: '主题', icon: 'diamond' },
         { path: '/demo/playground/store/transition', title: '页面过渡开关', icon: 'toggle-on' }
       ]
@@ -77,7 +77,7 @@ export default {
     {
       path: '/demo/playground/page-cache',
       title: '页面缓存',
-      icon: 'hdd-o',
+      icon: 'database-stack',
       children: [
         { path: '/demo/playground/page-cache/on', title: '开启缓存' },
         { path: '/demo/playground/page-cache/off', title: '关闭缓存' },

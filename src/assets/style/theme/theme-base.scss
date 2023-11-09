@@ -152,6 +152,12 @@
             font-size: 16px;
             margin-right: 4px;
           }
+          i.uno {
+            font-size: 16px;
+            margin-right: 4px;
+            line-height: 16px;
+            height: 16px;
+          }
         }
         .el-menu-item {
           @extend %header-menu-item;

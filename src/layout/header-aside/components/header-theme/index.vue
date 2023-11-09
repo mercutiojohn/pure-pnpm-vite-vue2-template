@@ -9,8 +9,8 @@
         type="text"
         @click="dialogVisible = true">
         <d2-icon
-          name="diamond"
-          style="font-size: 16px"/>
+          name="paint-brush"
+          size="24"/>
       </el-button>
     </el-tooltip>
     <el-dialog

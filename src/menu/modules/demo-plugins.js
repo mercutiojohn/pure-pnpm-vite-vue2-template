@@ -1,7 +1,7 @@
 export default {
   path: '/demo/plugins',
   title: '插件',
-  icon: 'plug',
+  icon: 'apps-add-in',
   children: [
     { path: '/demo/plugins/index', title: '插件', icon: 'home' },
     {
