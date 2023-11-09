@@ -12,6 +12,23 @@
   transform: translateX(30px);
 }
 
+// 过渡动画 页面弹出
+.fade-popup-leave-active {
+  // transition: all .5s;
+}
+.fade-popup-enter-active {
+  transition: transform .3s ease, opacity .2s;
+}
+.fade-popup-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.fade-popup-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0s;
+}
+
 // 过渡动画 缩放渐变
 .fade-scale-leave-active,
 .fade-scale-enter-active {

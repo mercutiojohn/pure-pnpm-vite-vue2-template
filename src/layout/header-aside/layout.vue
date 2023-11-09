@@ -61,7 +61,7 @@
               </div>
               <!-- 页面 -->
               <div class="d2-theme-container-main-body" flex-box="1">
-                <transition :name="transitionActive ? 'fade-transverse' : ''">
+                <transition :name="transitionActive ? 'fade-popup' : ''">
                   <keep-alive :include="keepAlive">
                     <router-view :key="routerViewKey" />
                   </keep-alive>
