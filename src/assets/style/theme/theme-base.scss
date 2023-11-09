@@ -248,10 +248,10 @@
       .d2-theme-container-main {
         // 主体部分分为多页面控制器 和主体
         .d2-theme-container-main-header {
-          height: 41px;
+          height: calc($element-tab-height + 1px);
           // 多页面控制器
           .d2-multiple-page-control-group {
-            padding-right: 20px;
+            padding-right: $frame-padding-right;
             .d2-multiple-page-control-content {
               overflow: auto;
               position: relative;
@@ -273,9 +273,13 @@
                 .el-button-group {
                   .el-button:first-child {
                     border-bottom-left-radius: 0px;
+                    height: calc($element-tab-height + 1px);
+                    padding: calc(($element-tab-height + 1px - 12px) / 2) $element-tab-padding;
                   }
                   .el-button:last-child {
                     border-bottom-right-radius: 0px;
+                    height: calc($element-tab-height + 1px);
+                    padding: calc(($element-tab-height + 1px - 12px) / 2) $element-tab-padding;
                   }
                 }
               }
@@ -292,7 +296,7 @@
             .d2-container-full {
               position: absolute;
               top: 0px;
-              right: 20px;
+              right: $frame-padding-right;
               bottom: 0px;
               left: 0px;
               display: flex;
@@ -316,7 +320,7 @@
             .d2-container-full-bs {
               position: absolute;
               top: 0px;
-              right: 20px;
+              right: $frame-padding-right;
               bottom: 0px;
               left: 0px;
               display: flex;
@@ -342,7 +346,7 @@
             .d2-container-ghost {
               position: absolute;
               top: 0px;
-              right: 20px;
+              right: $frame-padding-right;
               bottom: 0px;
               left: 0px;
               display: flex;
@@ -368,7 +372,7 @@
             .d2-container-ghost-bs {
               position: absolute;
               top: 0px;
-              right: 20px;
+              right: $frame-padding-right;
               bottom: 0px;
               left: 0px;
               display: flex;
@@ -394,7 +398,7 @@
             .d2-container-card {
               position: absolute;
               top: 0px;
-              right: 20px;
+              right: $frame-padding-right;
               bottom: 0px;
               left: 0px;
               display: flex;
@@ -424,7 +428,7 @@
             .d2-container-card-bs {
               position: absolute;
               top: 0px;
-              right: 20px;
+              right: $frame-padding-right;
               bottom: 0px;
               left: 0px;
               display: flex;
