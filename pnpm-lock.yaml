@@ -11,6 +11,12 @@ dependencies:
   '@d2-projects/vue-table-import':
     specifier: ^1.0.1
     version: 1.0.1
+  '@fontsource-variable/fira-code':
+    specifier: ^5.0.15
+    version: 5.0.15
+  '@fontsource/inter':
+    specifier: ^5.0.15
+    version: 5.0.15
   '@vitejs/plugin-vue2-jsx':
     specifier: ^1.1.0
     version: 1.1.0(vite@4.4.5)(vue@2.7.14)
@@ -791,6 +797,14 @@ packages:
     os: [win32]
     requiresBuild: true
     optional: true
+
+  /@fontsource-variable/fira-code@5.0.15:
+    resolution: {integrity: sha512-tp56A54PjfH1RBJQ3Jdqh5cvrEHd4n302z3v6sGAnTKW9+oQgU0dK4WAMIXgDhFY35BrhpoIElowfkAT7NYJfA==}
+    dev: false
+
+  /@fontsource/inter@5.0.15:
+    resolution: {integrity: sha512-/IoWYEXl8lqJEx50JqNPT+bI4VNwxb/bg2oOfvG8PiEsDsmHRFvWBVHlohBNn1+QdBf+KbAjU/gb4vlGOSsVWw==}
+    dev: false
 
   /@interactjs/actions@1.10.2(@interactjs/core@1.10.2)(@interactjs/utils@1.10.2):
     resolution: {integrity: sha512-BHJcW84WCMf/LsKmha/1Yog7aH3+QBXbLvowvZvwYvgjdUIb3xCa1a7FUYXuWAeKNMyKPVjFun+WPce75B+1tA==}

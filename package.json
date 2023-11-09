@@ -16,10 +16,13 @@
   "dependencies": {
     "@d2-projects/vue-table-export": "^1.1.3",
     "@d2-projects/vue-table-import": "^1.0.1",
+    "@fontsource-variable/fira-code": "^5.0.15",
+    "@fontsource/inter": "^5.0.15",
     "@vitejs/plugin-vue2-jsx": "^1.1.0",
     "axios": "^0.27.2",
     "axios-mock-adapter": "^1.21.5",
     "better-scroll": "^1.15.2",
+    "clipboard-polyfill": "^2.8.6",
     "countup.js": "^2.3.2",
     "dayjs": "^1.11.9",
     "element-ui": "^2.15.14",
@@ -46,12 +49,11 @@
     "vue": "^2.7.14",
     "vue-grid-layout": "^2.4.0",
     "vue-i18n": "^8.27.2",
+    "vue-json-tree-view": "^2.1.6",
     "vue-router": "^3.6.5",
     "vue-splitpane": "^1.0.6",
     "vue-template-compiler": "^2.7.14",
     "vue-ueditor-wrap": "^2.5.6",
-    "vuex": "3.6.2",
-    "vue-json-tree-view": "^2.1.6",
-    "clipboard-polyfill": "^2.8.6"
+    "vuex": "3.6.2"
   }
 }
