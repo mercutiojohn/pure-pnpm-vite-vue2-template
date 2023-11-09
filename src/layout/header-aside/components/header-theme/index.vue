@@ -13,13 +13,13 @@
           size="24"/>
       </el-button>
     </el-tooltip>
-    <el-dialog
+    <el-drawer
       title="主题"
-      width="600px"
       :visible.sync="dialogVisible"
+      direction="rtl"
       :append-to-body="true">
-      <d2-theme-list style="margin-top: -25px;"/>
-    </el-dialog>
+      <d2-theme-list/>
+    </el-drawer>
   </div>
 </template>
 

@@ -62,7 +62,7 @@
       size="mini"
       :loading="uploading"
       @click="handleUpload">
-      <d2-icon name="cloud-upload"/>
+      <d2-icon name="cloud-arrow-up"/>
       Upload {{log.length}} log data
     </el-button>
   </d2-container>

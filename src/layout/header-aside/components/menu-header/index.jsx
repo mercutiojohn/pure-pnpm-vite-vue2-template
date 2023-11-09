@@ -27,7 +27,7 @@ export default {
             mode="horizontal"
             defaultActive={ this.active }
             onSelect={ this.handleMenuSelect }>
-            { this.header.map(menu => createMenu.call(this, h, menu)) }
+            { this.header.map(menu => createMenu.call(this, h, menu, 'header')) }
           </el-menu>
         </div>
       </div>

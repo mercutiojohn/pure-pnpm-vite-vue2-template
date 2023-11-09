@@ -1,7 +1,5 @@
 <template>
-  <i :style="{ fontSize: `${size}px`, display: 'inline', lineHeight: `${size}px` }">
-    <Icon :icon="`${collection}:${name}-${size}-${type}`" :style="{ fontSize: `${size}px`, lineHeight: `${size}px`, display: 'inline' }"></Icon>
-  </i>
+  <Icon :icon="`${collection}:${name}-${size}-${type}`" :style="{ fontSize: `${size}px`, lineHeight: `${size}px`, display: 'inline', height: `${size}px`, width: `${size}px` }"></Icon>
 </template>
 
 <script>

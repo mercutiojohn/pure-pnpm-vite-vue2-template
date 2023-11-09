@@ -177,7 +177,7 @@
         display: flex;
         align-items: center;
         .btn-text {
-          padding: 14px 12px;
+          padding: 6px 12px;
           border-radius: 4px;
           margin: 0px !important;
           &.el-color-picker.el-color-picker--mini {
@@ -277,6 +277,7 @@
               bottom: -1px;
               .el-dropdown {
                 .el-button-group {
+                  display: flex;
                   .el-button:first-child {
                     border-bottom-left-radius: 0px;
                     height: calc($element-tab-height + 1px);

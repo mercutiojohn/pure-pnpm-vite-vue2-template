@@ -84,9 +84,18 @@
     }
     // 切换按钮
     .toggle-aside-btn {
+      background: $theme-header-item-background-color;
+      &:hover {
+        background: $theme-header-item-background-color-hover;
+      }
       i {
         color: $theme-header-item-color;
-        background: $theme-header-item-background-color;
+        &:hover {
+          color: $theme-header-item-color-hover;
+        }
+      }
+      svg {
+        color: $theme-header-item-color;
         &:hover {
           color: $theme-header-item-color-hover;
         }
