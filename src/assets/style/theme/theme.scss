@@ -1,5 +1,17 @@
 // 每个主题特有的设置
 .theme-#{$theme-name} {
+  // Tab 栏样式
+  .d2-contextmenu-list {
+    .d2-contextmenu-item {
+      color: $color-text-main;
+      &:hover {
+        background: $color-bg;
+        color: $color-text-main;
+      }
+      .d2-contextmenu-item-title {
+      }
+    }
+  }
 
   .el-message {
     &.el-message--info {
@@ -180,6 +192,9 @@
       .d2-layout-header-aside-menu-empty {
         background: $theme-aside-menu-empty-background-color;
         i {
+          color: $theme-aside-menu-empty-icon-color;
+        }
+        svg {
           color: $theme-aside-menu-empty-icon-color;
         }
         span {

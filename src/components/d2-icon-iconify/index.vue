@@ -1,5 +1,5 @@
 <template>
-  <Icon :icon="`${collection}:${name}-${size}-${type}`" :style="{ fontSize: `${size}px`, lineHeight: `${size}px`, display: 'inline', height: `${size}px`, width: `${size}px` }"></Icon>
+  <Icon :icon="`${collection}:${name}-${size || '16'}-${type}`" :style="{ fontSize: size && `${size}px`, lineHeight: size && `${size}px`, display: 'inline', height: size && `${size}px`, width: size && `${size}px` }"></Icon>
 </template>
 
 <script>
@@ -23,7 +23,7 @@ export default {
     size: {
       type: String,
       required: false,
-      default: '16'
+      default: ''
     },
     type: {
       type: String,

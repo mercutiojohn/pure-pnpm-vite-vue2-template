@@ -88,7 +88,7 @@ export default {
     {
       path: '/demo/playground/page-argu',
       title: '参数传递和留存',
-      icon: 'assistive-listening-systems',
+      icon: 'send',
       children: [
         { path: '/demo/playground/page-argu/send', title: '发送' },
         { path: '/demo/playground/page-argu/get/username-from-menu?userid=userid-from-menu', title: '接收' }
@@ -111,7 +111,7 @@ export default {
     {
       path: '/demo/playground/log',
       title: '日志',
-      icon: 'bullseye',
+      icon: 'clock',
       children: [
         { path: '/demo/playground/log/log', title: '日志记录', icon: 'dot-circle-o' },
         { path: '/demo/playground/log/error', title: '错误捕捉', icon: 'bug' },
@@ -122,12 +122,12 @@ export default {
     {
       path: '/demo/playground/add-routes',
       title: '动态添加路由',
-      icon: 'plus-square',
+      icon: 'arrow-flow-up-right',
       children: [
         { path: '/demo/playground/add-routes/routes', title: '添加页面', icon: 'file-o' }
       ]
     },
-    { path: '/demo/playground/env', title: '环境信息', icon: 'exclamation-circle' },
-    { path: '/demo/playground/locales', title: '国际化', icon: 'language' }
+    { path: '/demo/playground/env', title: '环境信息', icon: 'braces-checkmark' },
+    { path: '/demo/playground/locales', title: '国际化', icon: 'local-language' }
   ]
 }

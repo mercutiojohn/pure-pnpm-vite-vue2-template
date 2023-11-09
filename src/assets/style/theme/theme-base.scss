@@ -1,12 +1,42 @@
 // 减小弹出菜单的项目高度
 .el-menu--popup {
   .el-menu-item {
-    height: 36px;
-    line-height: 36px;
+    height: $element-menu-side-popup-height;
+    line-height: $element-menu-side-popup-height;
+    i, svg {
+      width: calc($element-menu-side-icon-size + 4px) !important;
+      height: $element-menu-side-icon-size !important;
+      text-align: center;
+      font-size: $element-menu-side-icon-size !important;
+    }
+    .title-collapsed {
+      display: none;
+    }
   }
   .el-submenu__title {
-    height: 36px;
-    line-height: 36px;
+    height: $element-menu-side-popup-height;
+    line-height: $element-menu-side-popup-height;
+    i:not(.el-submenu__icon-arrow), svg {
+      width: calc($element-menu-side-icon-size + 4px) !important;
+      height: $element-menu-side-icon-size !important;
+      text-align: center;
+      font-size: $element-menu-side-icon-size !important;
+    }
+  }
+}
+
+// Tab 栏样式
+.d2-contextmenu-list {
+  .d2-contextmenu-item {
+    padding: 8px 20px 8px 15px;
+    margin: 0;
+    font-size: 14px;
+    cursor: pointer;
+    &:hover {
+    }
+    .d2-contextmenu-item-title {
+      margin-left: 10px;
+    }
   }
 }
 
@@ -149,19 +179,20 @@
         %header-menu-item {
           @extend %unable-select;
           i.fa {
-            font-size: 16px;
+            font-size: $element-menu-top-icon-size;
             margin-right: 4px;
           }
-          i.uno {
-            font-size: 16px;
-            margin-right: 4px;
-            line-height: 16px;
-            height: 16px;
+          svg {
+            width: $element-menu-top-icon-size;
+            height: $element-menu-top-icon-size;
           }
         }
         .el-menu-item {
           @extend %header-menu-item;
           border-bottom: none;
+          .title-collapsed {
+            display: none;
+          }
         }
         .el-submenu {
           @extend %header-menu-item;
@@ -194,9 +225,10 @@
       // 侧边栏
       .d2-theme-container-aside {
         %d2-theme-container-aside-menu-icon {
-          width: 20px;
+          width: calc($element-menu-side-icon-size + 4px);
+          height: $element-menu-side-icon-size;
           text-align: center;
-          font-size: 16px;
+          font-size: $element-menu-side-icon-size;
         }
         // [菜单] 正常状态
         .el-menu {
@@ -204,7 +236,10 @@
           background-color: transparent;
           border-right: none;
           .el-menu-item {
-            i {
+            .title-collapsed {
+              display: none;
+            }
+            i, svg {
               @extend %d2-theme-container-aside-menu-icon;
             }
           }
@@ -212,7 +247,7 @@
         .el-submenu {
           @extend %unable-select;
           .el-submenu__title {
-            i {
+            i, svg {
               @extend %d2-theme-container-aside-menu-icon;
             }
             .el-submenu__icon-arrow {
@@ -246,7 +281,57 @@
         .el-menu--collapse {
           background-color: transparent;
           .el-submenu__title {
+            padding: 0!important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            gap: 5px;
+            height: 60px;
+            span {
+              font-size: .8rem;
+              line-height: .8rem;
+              height: auto;
+              width: auto;
+              visibility: visible;
+              overflow: hidden;
+              width: 100%;
+              text-overflow: ellipsis;
+            }
+            i, svg {
+              margin-right: 0;
+              width: $element-menu-side-collapse-icon-size;
+              height: $element-menu-side-collapse-icon-size;
+            }
+          }
+          .el-menu-item {
+            height: 60px;
+            .el-tooltip {
+              padding: 0!important;
+              display: flex!important;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
+              text-align: center;
+              .title-collapsed {
+                display: block;
+                font-size: .8rem;
+                line-height: .8rem;
+                height: auto;
+                width: auto;
+                visibility: visible;
+                overflow: hidden;
+                width: 100%;
+                text-overflow: ellipsis;
+              }
+              i, svg {
+                margin-right: 0;
+                width: $element-menu-side-collapse-icon-size;
+                height: $element-menu-side-collapse-icon-size;
+              }
+            }
           }
         }
       }

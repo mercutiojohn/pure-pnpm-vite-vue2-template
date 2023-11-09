@@ -30,7 +30,7 @@
         </el-tabs>
       </div>
     </div>
-    <div class="d2-multiple-page-control-btn" flex-box="0">
+    <div class="d2-multiple-page-control-btn" flex-box="0" v-if="showControlBtn">
       <el-dropdown
         size="default"
         split-button
@@ -71,6 +71,7 @@ export default {
   },
   data () {
     return {
+      showControlBtn: false,
       contextmenuFlag: false,
       contentmenuX: 0,
       contentmenuY: 0,

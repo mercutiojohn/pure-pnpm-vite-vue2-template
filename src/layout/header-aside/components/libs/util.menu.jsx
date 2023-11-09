@@ -4,16 +4,16 @@
  * @param {Object} menu 菜单项
  */
 export function elMenuItem (h, menu, type = 'side') {
-  console.log('[elMenuItem]', menu, type)
   let icon = null
   // if (menu.icon) icon = <i class={ `fa fa-${menu.icon}` }/>
-  if (menu.icon) icon = <d2-icon name={ menu.icon } size={type === 'header' ? '20' : '16'}/>
+  if (menu.icon) icon = <d2-icon name={ menu.icon }/>
   else if (menu.iconSvg) icon = <d2-icon-svg name={ menu.iconSvg }/>
   else icon = <i class="fa fa-file-o"/>
   return <el-menu-item
     key={ menu.path }
     index={ menu.path }>
     { icon }
+    <span class="title-collapsed">{ menu.title || '未命名菜单' }</span>
     <span slot="title">{ menu.title || '未命名菜单' }</span>
   </el-menu-item>
 }
@@ -24,10 +24,9 @@ export function elMenuItem (h, menu, type = 'side') {
  * @param {Object} menu 菜单项
  */
 export function elSubmenu (h, menu, type = 'side') {
-  console.log('[elSubmenu]', menu, type)
   let icon = null
   // if (menu.icon) icon = <i slot="title" class={ `fa fa-${menu.icon}` }/>
-  if (menu.icon) icon = <d2-icon slot="title" name={ menu.icon } size={type === 'header' ? '20' : '16'}/>
+  if (menu.icon) icon = <d2-icon slot="title" name={ menu.icon }/>
   else if (menu.iconSvg) icon = <d2-icon-svg slot="title" name={ menu.iconSvg }/>
   else icon = <i slot="title" class="fa fa-folder-o"/>
   return <el-submenu
@@ -45,7 +44,6 @@ export function elSubmenu (h, menu, type = 'side') {
  * @param {Object} menu 菜单项
  */
 export function createMenu (h, menu, type = 'side') {
-  console.log('[createMenu]', menu, type)
   if (menu.children === undefined) return elMenuItem.call(this, h, menu, type)
   return elSubmenu.call(this, h, menu, type)
 }
