@@ -3,6 +3,7 @@ import App from './App.vue'
 
 // Style
 import '@/style.scss'
+import 'virtual:uno.css'
 
 // i18n support
 import i18n from './plugin/i18n'

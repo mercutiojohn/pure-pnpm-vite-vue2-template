@@ -2,6 +2,7 @@ import vue from '@vitejs/plugin-vue2'
 import vueJsx from '@vitejs/plugin-vue2-jsx'
 import createSvgSpritePlugin from 'vite-plugin-svg-sprite'
 import Markdown from 'vite-plugin-md'
+import UnoCSS from 'unocss/vite'
 import { resolve } from 'path'
 
 export default {
@@ -16,7 +17,8 @@ export default {
       include: 'src/assets/svg-icons/icons/*.svg',
       symbolId: 'd2-[name]',
     }),
-    Markdown()
+    Markdown(),
+    UnoCSS()
   ],
 
   resolve: {
