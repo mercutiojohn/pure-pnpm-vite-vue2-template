@@ -23,7 +23,7 @@
             :name="page.fullPath"
             :closable="isTabClosable(page)">
             <span slot="label">
-              <!-- <d2-icon :name="page.meta.icon"/> -->
+              <!-- <d2-icon-fa :name="page.meta.icon"/> -->
               {{page.meta.title || '未命名'}}
             </span>
           </el-tab-pane>
@@ -36,22 +36,22 @@
         split-button
         @click="closeAll"
         @command="command => handleControlItemClick(command)">
-        <d2-icon name="dismiss"/>
+        <d2-icon-fa name="dismiss"/>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item command="left">
-            <d2-icon name="arrow-left" class="d2-mr-10"/>
+            <d2-icon-fa name="arrow-left" class="d2-mr-10"/>
             关闭左侧
           </el-dropdown-item>
           <el-dropdown-item command="right">
-            <d2-icon name="arrow-right" class="d2-mr-10"/>
+            <d2-icon-fa name="arrow-right" class="d2-mr-10"/>
             关闭右侧
           </el-dropdown-item>
           <el-dropdown-item command="other">
-            <d2-icon name="square-dismiss" class="d2-mr-10"/>
+            <d2-icon-fa name="square-dismiss" class="d2-mr-10"/>
             关闭其它
           </el-dropdown-item>
           <el-dropdown-item command="all">
-            <d2-icon name="dismiss-square-multiple" class="d2-mr-10"/>
+            <d2-icon-fa name="dismiss-square-multiple" class="d2-mr-10"/>
             全部关闭
           </el-dropdown-item>
         </el-dropdown-menu>

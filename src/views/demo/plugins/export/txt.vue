@@ -9,7 +9,7 @@
     </el-input>
     <div class="d2-mt">
       <el-button type="primary" @click="exportTxt">
-        <d2-icon name="download"/>
+        <d2-icon-fa name="download"/>
         保存为 txt
       </el-button>
     </div>

@@ -8,7 +8,7 @@
         class="d2-ml-0 d2-mr btn-text can-hover"
         type="text"
         @click="dialogVisible = true">
-        <d2-icon
+        <d2-icon-fa
           name="diamond"
           style="font-size: 16px"/>
       </el-button>

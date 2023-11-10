@@ -2,7 +2,7 @@
   <el-button-group>
     <el-button v-if="title" size="mini" @click="$open(link)">{{title}}</el-button>
     <el-button size="mini" @click="$open(link)">
-      <d2-icon :name="icon"/>
+      <d2-icon-fa :name="icon"/>
       {{link}}
     </el-button>
   </el-button-group>
