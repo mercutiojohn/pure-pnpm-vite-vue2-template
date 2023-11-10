@@ -4,7 +4,7 @@
       <div class="d2-panel-search-item__icon-box" flex="main:center cross:center">
         <d2-icon-fa v-if="item.icon" :name="item.icon"/>
         <d2-icon-svg v-else-if="item.iconSvg" :name="item.iconSvg"/>
-        <d2-icon-fa v-else name="file-o"/>
+        <d2-icon v-else name="i-fa-file-o"/>
       </div>
     </div>
     <div class="d2-panel-search-item__info" flex-box="1" flex="dir:top">

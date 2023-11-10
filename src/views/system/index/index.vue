@@ -11,7 +11,7 @@
           <el-popover :width="150" trigger="hover">
             <img src="./image/qr.jpg" style="width: 150px;">
             <span slot="reference" class="btn-group__btn btn-group__btn--link">
-              <d2-icon-fa name="weixin"/>
+              <d2-icon name="i-fa-weixin"/>
               微信服务号
             </span>
           </el-popover>

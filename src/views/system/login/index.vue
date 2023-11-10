@@ -71,7 +71,7 @@
             <p
               class="page-login--options"
               flex="main:justify cross:center">
-              <span><d2-icon-fa name="question-circle"/> 忘记密码</span>
+              <span><d2-icon name="i-fa-question-circle"/> 忘记密码</span>
               <span>注册用户</span>
             </p>
             <!-- quick login -->
@@ -91,7 +91,7 @@
           </p>
           <p class="page-login--content-footer-copyright">
             Copyright
-            <d2-icon-fa name="copyright"/>
+            <d2-icon name="i-fa-copyright"/>
             2018 D2 Projects 开源组织出品
             <a href="https://github.com/FairyEver">
               @FairyEver
@@ -112,7 +112,7 @@
       <el-row :gutter="10" style="margin: -20px 0px -10px 0px;">
         <el-col v-for="(user, index) in users" :key="index" :span="8">
           <div class="page-login--quick-user" @click="handleUserBtnClick(user)">
-            <d2-icon-fa name="user-circle-o"/>
+            <d2-icon name="i-fa-user-circle-o"/>
             <span>{{user.name}}</span>
           </div>
         </el-col>

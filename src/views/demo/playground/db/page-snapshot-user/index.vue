@@ -62,7 +62,7 @@
       slot="footer"
       type="danger"
       @click="handleClear">
-      <d2-icon-fa name="trash-o"/>
+      <d2-icon name="i-fa-trash-o"/>
       删除当前页面快照
     </el-button>
   </d2-container>
