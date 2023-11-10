@@ -17,6 +17,9 @@ dependencies:
   '@fontsource-variable/inter':
     specifier: ^5.0.15
     version: 5.0.15
+  '@iconify-json/fa':
+    specifier: ^1.1.5
+    version: 1.1.5
   '@iconify-json/fluent':
     specifier: ^1.1.40
     version: 1.1.40
@@ -823,6 +826,12 @@ packages:
 
   /@fontsource-variable/inter@5.0.15:
     resolution: {integrity: sha512-CdQPQQgOVxg6ifmbrqYZeUqtQf7p2wPn6EvJ4M+vdNnsmYZgYwPPPQDNlIOU7LCUlSGaN26v6H0uA030WKn61g==}
+    dev: false
+
+  /@iconify-json/fa@1.1.5:
+    resolution: {integrity: sha512-a6iC7FArLDb02hYKrgQWdn5fCCtXxWhw9mkqXbKLvuta4DdZuZdaSbDoA4GuZx1t+0cD7/epF8I9tkrNvyzrrA==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: false
 
   /@iconify-json/fluent@1.1.40:
