@@ -1,20 +1,17 @@
 <template>
-  <Icon :icon="`${collection}:${name}-${size || '16'}-${type}`" :style="{ fontSize: size && `${size}px`, lineHeight: size && `${size}px`, display: 'inline', height: size && `${size}px`, width: size && `${size}px` }"></Icon>
+  <!-- <Icon :icon="`${name}`" :style="{ fontSize: size && `${size}px`, lineHeight: size && `${size}px`, display: 'inline', height: size && `${size}px`, width: size && `${size}px` }"></Icon> -->
+  <i :class="`${name}`" :style="{ fontSize: size && `${size}px`, lineHeight: size && `${size}px`, height: size && `${size}px`, width: size && `${size}px` }"></i>
+  <!-- <i :class="`i-fluent:apps-16-regular`" :style="{ fontSize: size && `${size}px`, lineHeight: size && `${size}px`, display: 'inline', height: size && `${size}px`, width: size && `${size}px` }"></i> -->
 </template>
 
 <script>
-import { Icon } from '@iconify/vue2'
+// import { Icon } from '@iconify/vue2'
 export default {
   name: 'd2-icon-iconify',
   components: {
-    Icon
+    // Icon
   },
   props: {
-    collection: {
-      type: String,
-      required: false,
-      default: 'fluent'
-    },
     name: {
       type: String,
       required: false,
@@ -24,11 +21,6 @@ export default {
       type: String,
       required: false,
       default: ''
-    },
-    type: {
-      type: String,
-      required: false,
-      default: 'regular'
     }
   }
 }

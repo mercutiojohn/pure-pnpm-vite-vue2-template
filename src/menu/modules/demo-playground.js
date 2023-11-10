@@ -1,7 +1,7 @@
 export default {
   path: '/demo/playground',
   title: '功能',
-  icon: 'apps',
+  icon: 'flask',
   children: [
     { path: '/demo/playground/index', title: '功能', icon: 'home' },
     {
@@ -24,7 +24,7 @@ export default {
     },
     {
       title: '空菜单演示',
-      icon: 'folder',
+      icon: 'folder-o',
       children: [
         {
           title: '正在开发 1',
@@ -44,7 +44,7 @@ export default {
       children: [
         { path: '/demo/playground/frame/d2-doc', title: 'D2Admin 中文文档', iconSvg: 'd2-admin' },
         { path: '/demo/playground/frame/html', title: '静态 HTML', icon: 'code' },
-        { path: '/demo/playground/frame/report', title: '构建分析', icon: 'calendar-data-bar' }
+        { path: '/demo/playground/frame/report', title: '构建分析', icon: 'pie-chart' }
       ]
     },
     {
@@ -62,14 +62,14 @@ export default {
     {
       path: '/demo/playground/store',
       title: '全局状态管理',
-      icon: 'status',
+      icon: 'bolt',
       children: [
-        { path: '/demo/playground/store/page', title: '多标签页控制', icon: 'restore' },
-        { path: '/demo/playground/store/menu', title: '菜单控制', icon: 'list' },
+        { path: '/demo/playground/store/page', title: '多标签页控制', icon: 'window-restore' },
+        { path: '/demo/playground/store/menu', title: '菜单控制', icon: 'bars' },
         { path: '/demo/playground/store/size', title: '全局尺寸', icon: 'font' },
         { path: '/demo/playground/store/ua', title: '浏览器信息', icon: 'info-circle' },
         { path: '/demo/playground/store/gray', title: '灰度模式', icon: 'eye' },
-        { path: '/demo/playground/store/fullscreen', title: '全屏', icon: 'full-screen-maximize' },
+        { path: '/demo/playground/store/fullscreen', title: '全屏', icon: 'arrows-alt' },
         { path: '/demo/playground/store/theme', title: '主题', icon: 'diamond' },
         { path: '/demo/playground/store/transition', title: '页面过渡开关', icon: 'toggle-on' }
       ]
@@ -77,7 +77,7 @@ export default {
     {
       path: '/demo/playground/page-cache',
       title: '页面缓存',
-      icon: 'database-stack',
+      icon: 'hdd-o',
       children: [
         { path: '/demo/playground/page-cache/on', title: '开启缓存' },
         { path: '/demo/playground/page-cache/off', title: '关闭缓存' },
@@ -88,7 +88,7 @@ export default {
     {
       path: '/demo/playground/page-argu',
       title: '参数传递和留存',
-      icon: 'send',
+      icon: 'assistive-listening-systems',
       children: [
         { path: '/demo/playground/page-argu/send', title: '发送' },
         { path: '/demo/playground/page-argu/get/username-from-menu?userid=userid-from-menu', title: '接收' }
@@ -111,7 +111,7 @@ export default {
     {
       path: '/demo/playground/log',
       title: '日志',
-      icon: 'clock',
+      icon: 'bullseye',
       children: [
         { path: '/demo/playground/log/log', title: '日志记录', icon: 'dot-circle-o' },
         { path: '/demo/playground/log/error', title: '错误捕捉', icon: 'bug' },
@@ -122,12 +122,12 @@ export default {
     {
       path: '/demo/playground/add-routes',
       title: '动态添加路由',
-      icon: 'arrow-flow-up-right',
+      icon: 'plus-square',
       children: [
         { path: '/demo/playground/add-routes/routes', title: '添加页面', icon: 'file-o' }
       ]
     },
-    { path: '/demo/playground/env', title: '环境信息', icon: 'braces-checkmark' },
-    { path: '/demo/playground/locales', title: '国际化', icon: 'local-language' }
+    { path: '/demo/playground/env', title: '环境信息', icon: 'exclamation-circle' },
+    { path: '/demo/playground/locales', title: '国际化', icon: 'language' }
   ]
 }

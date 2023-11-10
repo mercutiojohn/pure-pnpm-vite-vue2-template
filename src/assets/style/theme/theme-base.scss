@@ -247,10 +247,10 @@
         .el-submenu {
           @extend %unable-select;
           .el-submenu__title {
-            i, svg {
+            i:not(:last-child), svg {
               @extend %d2-theme-container-aside-menu-icon;
             }
-            .el-submenu__icon-arrow {
+            i:last-child {
               opacity: .5;
               margin-top: -6px;
               right: 5px;
