@@ -2,9 +2,9 @@
 export default {
   path: '/demo/playground',
   title: '功能',
-  icon: 'i-fa:flask',
+  icon: 'i-tdesign:app',
   children: [
-    { path: '/demo/playground/index', title: '功能', icon: 'i-fa:home' },
+    { path: '/demo/playground/index', title: '功能', icon: 'i-ri:home-line' },
     {
       title: 'svg 菜单图标',
       iconSvg: 'd2-admin',
@@ -25,7 +25,7 @@ export default {
     },
     {
       title: '空菜单演示',
-      icon: 'i-fa:folder-o',
+      icon: 'i-ri:folder-2-line',
       children: [
         {
           title: '正在开发 1',
@@ -41,7 +41,7 @@ export default {
     {
       path: '/demo/playground/frame',
       title: '内嵌网页',
-      icon: 'i-fa:globe',
+      icon: 'i-ri:global-line',
       children: [
         { path: '/demo/playground/frame/d2-doc', title: 'D2Admin 中文文档', iconSvg: 'd2-admin' },
         { path: '/demo/playground/frame/html', title: '静态 HTML', icon: 'i-fa:code' },
@@ -50,7 +50,7 @@ export default {
     },
     {
       title: '新窗口打开链接',
-      icon: 'i-fa:link',
+      icon: 'i-ri:link',
       children: [
         { path: 'https://github.com/d2-projects/d2-admin', title: 'D2Admin Github', icon: 'i-fa:github' },
         { path: 'https://juejin.im/user/57a48b632e958a006691b946/posts', title: '掘金', icon: 'i-fa:globe' },

@@ -48,7 +48,7 @@ export default {
     /* margin-left: -8px; */
     /* font-size: 120px; */
     /* line-height: 120px; */
-    font-weight: 900;
+    font-weight: 700;
     /* color: #FFF; */
   }
   .banner--sub-title {

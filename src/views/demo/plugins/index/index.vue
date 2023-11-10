@@ -12,7 +12,7 @@ export default {
     return {
       menu,
       banner: {
-        title: 'Plugin',
+        title: 'Plugins',
         subTitle: 'D2Admin 集成了许多实用插件'
       }
     }

@@ -34,7 +34,7 @@ export const menuHeader = supplementPath([
   {
     path: '/index',
     title: '首页',
-    icon: 'i-fa:home'
+    icon: 'i-ri:home-line'
   },
   demoPlayground,
   demoComponents,

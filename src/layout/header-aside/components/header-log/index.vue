@@ -1,10 +1,11 @@
 <template>
   <el-tooltip effect="dark" :content="tooltipContent" placement="bottom">
     <el-button class="d2-ml-0 d2-mr btn-text can-hover" type="text" @click="handleClick">
-      <el-badge v-if="logLength > 0" :max="99" :value="logLengthError" :is-dot="logLengthError === 0">
-        <d2-icon-fa :name="logLengthError === 0 ? 'dot-circle-o' : 'bug'" style="font-size: 20px"/>
+      <el-badge v-if="logLength > 0" :max="99" :value="logLengthError" :is-dot="logLengthError === 0" class="font-size-20px w-20px h-20px">
+        <d2-icon v-if="logLengthError === 0" name="i-tdesign:terminal-window" class="font-size-20px line-height-20px block"/>
+        <d2-icon v-else name="i-ri:bug-2-line" class="font-size-20px line-height-20px block"/>
       </el-badge>
-      <d2-icon v-else name="i-fa-dot-circle-o" style="font-size: 20px"/>
+      <d2-icon v-else name="i-tdesign:terminal-window" class="font-size-20px"/>
     </el-button>
   </el-tooltip>
 </template>

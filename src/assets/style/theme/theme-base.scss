@@ -178,7 +178,7 @@
         background-color: transparent;
         %header-menu-item {
           @extend %unable-select;
-          i.fa {
+          i:not(:last-child) {
             font-size: $element-menu-top-icon-size;
             margin-right: 4px;
           }

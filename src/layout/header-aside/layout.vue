@@ -15,7 +15,7 @@
           <img v-else :src="`${$baseUrl}image/theme/${themeActiveSetting.name}/logo/all.png`">
         </router-link>
         <div class="toggle-aside-btn" @click="handleToggleAside" flex-box="0">
-          <d2-icon name="i-fa-bars"/>
+          <d2-icon name="i-ri:menu-fill"/>
         </div>
         <d2-menu-header flex-box="1"/>
         <!-- 顶栏右侧 -->

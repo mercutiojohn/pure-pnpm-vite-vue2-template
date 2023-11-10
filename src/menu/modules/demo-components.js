@@ -2,9 +2,9 @@
 export default {
   path: '/demo/components',
   title: '组件',
-  icon: 'i-fa:puzzle-piece',
+  icon: 'i-ri:apps-2-line',
   children: [
-    { path: '/demo/components/index', title: '扩展组件', icon: 'i-fa:home' },
+    { path: '/demo/components/index', title: '扩展组件', icon: 'i-ri:home-line' },
     {
       path: '/demo/components/container',
       title: '布局容器',
@@ -13,32 +13,32 @@ export default {
         {
           title: '填充型',
           children: [
-            { path: '/demo/components/container/full', title: '基础', icon: 'i-fa:' },
-            { path: '/demo/components/container/full-slot', title: '插槽', icon: 'i-fa:' },
-            { path: '/demo/components/container/full-bs', title: '滚动优化', icon: 'i-fa:' }
+            { path: '/demo/components/container/full', title: '基础', icon: '' },
+            { path: '/demo/components/container/full-slot', title: '插槽', icon: '' },
+            { path: '/demo/components/container/full-bs', title: '滚动优化', icon: '' }
           ]
         },
         {
           title: '隐形模式',
           children: [
-            { path: '/demo/components/container/ghost', title: '基础', icon: 'i-fa:' },
-            { path: '/demo/components/container/ghost-slot', title: '插槽', icon: 'i-fa:' },
-            { path: '/demo/components/container/ghost-bs', title: '滚动优化', icon: 'i-fa:' }
+            { path: '/demo/components/container/ghost', title: '基础', icon: '' },
+            { path: '/demo/components/container/ghost-slot', title: '插槽', icon: '' },
+            { path: '/demo/components/container/ghost-bs', title: '滚动优化', icon: '' }
           ]
         },
         {
           title: '卡片型',
           children: [
-            { path: '/demo/components/container/card', title: '基础', icon: 'i-fa:' },
-            { path: '/demo/components/container/card-slot', title: '插槽', icon: 'i-fa:' },
-            { path: '/demo/components/container/card-bs', title: '滚动优化', icon: 'i-fa:' }
+            { path: '/demo/components/container/card', title: '基础', icon: '' },
+            { path: '/demo/components/container/card-slot', title: '插槽', icon: '' },
+            { path: '/demo/components/container/card-bs', title: '滚动优化', icon: '' }
           ]
         },
         {
           title: '方法',
           children: [
-            { path: '/demo/components/container/api?bs=false', title: '滚动控制', icon: 'i-fa:' },
-            { path: '/demo/components/container/api?bs=true', title: '滚动控制 BS', icon: 'i-fa:' }
+            { path: '/demo/components/container/api?bs=false', title: '滚动控制', icon: '' },
+            { path: '/demo/components/container/api?bs=true', title: '滚动控制 BS', icon: '' }
           ]
         }
       ]
@@ -57,8 +57,8 @@ export default {
       title: '编辑器',
       icon: 'i-fa:pencil-square-o',
       children: [
-        { path: '/demo/components/editor-ueditor', title: 'UEditor', icon: 'i-fa:' },
-        { path: '/demo/components/editor-quill', title: 'Quill', icon: 'i-fa:' }
+        { path: '/demo/components/editor-ueditor', title: 'UEditor', icon: '' },
+        { path: '/demo/components/editor-quill', title: 'Quill', icon: '' }
       ]
     },
     {

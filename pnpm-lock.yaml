@@ -17,12 +17,6 @@ dependencies:
   '@fontsource-variable/inter':
     specifier: ^5.0.15
     version: 5.0.15
-  '@iconify-json/fa':
-    specifier: ^1.1.5
-    version: 1.1.5
-  '@iconify-json/fluent':
-    specifier: ^1.1.40
-    version: 1.1.40
   '@vitejs/plugin-vue2-jsx':
     specifier: ^1.1.0
     version: 1.1.0(vite@4.4.5)(vue@2.7.14)
@@ -136,6 +130,21 @@ dependencies:
     version: 3.6.2(vue@2.7.14)
 
 devDependencies:
+  '@iconify-json/fa':
+    specifier: ^1.1.5
+    version: 1.1.5
+  '@iconify-json/fluent':
+    specifier: ^1.1.40
+    version: 1.1.40
+  '@iconify-json/ri':
+    specifier: ^1.1.12
+    version: 1.1.12
+  '@iconify-json/solar':
+    specifier: ^1.1.5
+    version: 1.1.5
+  '@iconify-json/tdesign':
+    specifier: ^1.1.0
+    version: 1.1.0
   '@iconify/vue2':
     specifier: ^2.1.0
     version: 2.1.0(vue@2.7.14)
@@ -832,16 +841,35 @@ packages:
     resolution: {integrity: sha512-a6iC7FArLDb02hYKrgQWdn5fCCtXxWhw9mkqXbKLvuta4DdZuZdaSbDoA4GuZx1t+0cD7/epF8I9tkrNvyzrrA==}
     dependencies:
       '@iconify/types': 2.0.0
-    dev: false
+    dev: true
 
   /@iconify-json/fluent@1.1.40:
     resolution: {integrity: sha512-cxURYtOuByAqom+Mhf3ZoVbxtAh6jdAWANzPSCPhIQrb3tMpn1B3B9p9bmJCxabiETfg0p422PlX3xlCUfg6HA==}
     dependencies:
       '@iconify/types': 2.0.0
-    dev: false
+    dev: true
+
+  /@iconify-json/ri@1.1.12:
+    resolution: {integrity: sha512-s5VsyMWYuUuTB5bATJRoDQKGqo6W0dsxvOBrJI/P2H9QI7IAaAWl8zHxseSjoUGG6AwZwWwDMW9YPULPt+vA6w==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/solar@1.1.5:
+    resolution: {integrity: sha512-IeYbRYu0Y3GFXspGwUT876ok1n3Hkqw/CViP+zaDrGp+uLphjddLlL9hu8vkp5UOq+WnNWb5EG1vM1yro79Fzg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/tdesign@1.1.0:
+    resolution: {integrity: sha512-yb50t3dK4lwMU4T5M5wAQU21K5UAwm2f8A4gdvR2G9oC3enRSX3QFMlSoBp/JdnL0OeT1vAvB+JgQQk2oWwKYg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
+    dev: true
 
   /@iconify/utils@2.1.11:
     resolution: {integrity: sha512-M/w3PkN8zQYXi8N6qK/KhnYMfEbbb6Sk8RZVn8g+Pmmu5ybw177RpsaGwpziyHeUsu4etrexYSWq3rwnIqzYCg==}

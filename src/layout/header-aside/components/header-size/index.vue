@@ -1,7 +1,7 @@
 <template>
   <el-dropdown placement="bottom" size="small" @command="handleChange">
     <el-button class="d2-mr btn-text can-hover" type="text">
-      <d2-icon name="i-fa-font" style="font-size: 16px;"/>
+      <d2-icon name="i-ri:font-size-2" class="font-size-20px"/>
     </el-button>
     <el-dropdown-menu slot="dropdown">
       <el-dropdown-item v-for="item in options" :key="item.value" :command="item.value">

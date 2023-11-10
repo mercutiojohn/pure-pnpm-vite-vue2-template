@@ -76,14 +76,14 @@ export default {
       contentmenuX: 0,
       contentmenuY: 0,
       contextmenuListIndex: [
-        { icon: 'dismiss-square-multiple', title: '关闭全部', value: 'all' }
+        { icon: 'i-fluent:dismiss-square-multiple-16-regular', title: '关闭全部', value: 'all' }
       ],
       contextmenuList: [
-        { icon: 'arrow-counterclockwise', title: '刷新', value: 'refresh' },
-        { icon: 'arrow-left', title: '关闭左侧', value: 'left' },
-        { icon: 'arrow-right', title: '关闭右侧', value: 'right' },
-        { icon: 'square-dismiss', title: '关闭其它', value: 'other' },
-        { icon: 'dismiss-square-multiple', title: '关闭全部', value: 'all' }
+        { icon: 'i-fluent:arrow-counterclockwise-16-regular', title: '刷新', value: 'refresh' },
+        { icon: 'i-fluent:arrow-left-16-regular', title: '关闭左侧', value: 'left' },
+        { icon: 'i-fluent:arrow-right-16-regular', title: '关闭右侧', value: 'right' },
+        { icon: 'i-fluent:square-dismiss-16-regular', title: '关闭其它', value: 'other' },
+        { icon: 'i-fluent:dismiss-square-multiple-16-regular', title: '关闭全部', value: 'all' }
       ],
       tagName: '/index'
     }

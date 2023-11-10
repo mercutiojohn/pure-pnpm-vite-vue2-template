@@ -2,9 +2,9 @@
 export default {
   path: '/demo/plugins',
   title: '插件',
-  icon: 'i-fa:plug',
+  icon: 'i-ri:plug-line',
   children: [
-    { path: '/demo/plugins/index', title: '插件', icon: 'i-fa:home' },
+    { path: '/demo/plugins/index', title: '插件', icon: 'i-ri:home-line' },
     {
       path: '/demo/plugins/import',
       title: '导入',
