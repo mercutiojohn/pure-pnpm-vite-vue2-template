@@ -1,0 +1,10 @@
+// 每个主题特有的设置
+.theme-#{$theme-name} {
+    @import './color.scss';
+    @import 'element-ui/packages/theme-chalk/src/index.scss';
+    @import '@/assets/style/fixed/el-animations.scss';
+  .d2-layout-header-aside-group {
+    background: #bc00e3;
+    background: linear-gradient(120deg, #bc00e3 0%, #4EFFFB 100%);
+  }
+}

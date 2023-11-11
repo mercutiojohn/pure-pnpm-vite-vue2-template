@@ -1,14 +1,11 @@
 @import 'public';
 
-// Element 颜色重置
-@import '@/assets/style/fixed/el-color.scss';
-@import 'element-ui/packages/theme-chalk/src/index.scss';
-@import '@/assets/style/fixed/el-animations.scss';
-
 // 补丁 base
 @import '@/assets/style/fixed/base.scss';
 // 补丁 element
-@import '@/assets/style/fixed/element.scss';
+// @import 'element-ui/packages/theme-chalk/src/index.scss';  // Element 样式重置
+@import '@/assets/style/fixed/element.scss'; // 补丁 element
+@import '@/assets/style/fixed/el-animations.scss'; // 补丁 element 动画
 // 补丁 markdown
 @import '@/assets/style/fixed/markdown.scss';
 // 补丁 n-progress
