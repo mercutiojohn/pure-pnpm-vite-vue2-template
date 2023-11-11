@@ -63,10 +63,10 @@ export default {
     {
       path: '/demo/playground/store',
       title: '全局状态管理',
-      icon: 'i-fa:bolt',
+      icon: 'i-ri:lightbulb-flash-line',
       children: [
-        { path: '/demo/playground/store/page', title: '多标签页控制', icon: 'i-fa:window-restore' },
-        { path: '/demo/playground/store/menu', title: '菜单控制', icon: 'i-fa:bars' },
+        { path: '/demo/playground/store/page', title: '多标签页控制', icon: 'i-ri:file-copy-line' },
+        { path: '/demo/playground/store/menu', title: '菜单控制', icon: 'i-ri:list-check-2' },
         { path: '/demo/playground/store/size', title: '全局尺寸', icon: 'i-fa:font' },
         { path: '/demo/playground/store/ua', title: '浏览器信息', icon: 'i-fa:info-circle' },
         { path: '/demo/playground/store/gray', title: '灰度模式', icon: 'i-fa:eye' },
@@ -78,7 +78,7 @@ export default {
     {
       path: '/demo/playground/page-cache',
       title: '页面缓存',
-      icon: 'i-fa:hdd-o',
+      icon: 'i-ri:save-line',
       children: [
         { path: '/demo/playground/page-cache/on', title: '开启缓存' },
         { path: '/demo/playground/page-cache/off', title: '关闭缓存' },

@@ -1,6 +1,11 @@
 // 每个主题特有的设置
 .theme-#{$theme-name} {
   // Tab 栏样式
+  .d2-contextmenu {
+    box-shadow: $--box-shadow-base;
+    background: #FFF;
+    border: 1px solid #cfd7e5;
+  }
   .d2-contextmenu-list {
     .d2-contextmenu-item {
       color: $color-text-main;

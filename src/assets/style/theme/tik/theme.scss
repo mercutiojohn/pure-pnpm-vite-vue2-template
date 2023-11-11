@@ -1,0 +1,12 @@
+.theme-#{$theme-name} {
+    .d2-layout-header-aside-group {
+        height: 100%;
+        width: 100%;
+        min-width: 900px;
+        background-size: contain;
+        background-position: top left;
+        overflow: hidden;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+}

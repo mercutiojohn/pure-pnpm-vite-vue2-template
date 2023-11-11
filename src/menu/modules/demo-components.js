@@ -8,7 +8,7 @@ export default {
     {
       path: '/demo/components/container',
       title: '布局容器',
-      icon: 'i-fa:window-restore',
+      icon: 'i-ri:file-copy-line',
       children: [
         {
           title: '填充型',
@@ -46,7 +46,7 @@ export default {
     {
       path: '/demo/components/layout/grid',
       title: '高级布局',
-      icon: 'i-fa:tasks',
+      icon: 'i-ri:layout-3-line',
       children: [
         { path: '/demo/components/layout/grid', title: '拖拽位置和大小' },
         { path: '/demo/components/layout/splitpane', title: '区域划分' }
@@ -55,7 +55,7 @@ export default {
     {
       path: '/demo/components/editor',
       title: '编辑器',
-      icon: 'i-fa:pencil-square-o',
+      icon: 'i-ri:edit-box-line',
       children: [
         { path: '/demo/components/editor-ueditor', title: 'UEditor', icon: '' },
         { path: '/demo/components/editor-quill', title: 'Quill', icon: '' }
@@ -64,7 +64,7 @@ export default {
     {
       path: '/demo/components/icon',
       title: '图标',
-      icon: 'i-fa:star',
+      icon: 'i-ri:user-smile-line',
       children: [
         { path: '/demo/components/icon/icon', title: '图标组件' },
         { path: '/demo/components/icon/icon-svg', title: 'svg 图标组件' },
@@ -76,7 +76,7 @@ export default {
     {
       path: '/demo/components/markdown',
       title: 'markdown 解析',
-      icon: 'i-fa:file-text-o',
+      icon: 'i-ri:markdown-line',
       children: [
         { path: '/demo/components/markdown/source', title: '指定资源' },
         { path: '/demo/components/markdown/url', title: '异步加载文件' }

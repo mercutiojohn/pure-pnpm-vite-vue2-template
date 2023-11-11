@@ -9,7 +9,7 @@ export function elMenuItem (h, menu, type = 'side') {
   // if (menu.icon) icon = <d2-icon-fa name={ menu.icon }/>
   if (menu.icon) icon = <d2-icon-iconify name={ menu.icon }/>
   else if (menu.iconSvg) icon = <d2-icon-svg name={ menu.iconSvg }/>
-  else icon = <i class="fa fa-file-o"/>
+  else icon = <i class="i-ri:file-line"/>
   return <el-menu-item
     key={ menu.path }
     index={ menu.path }>
@@ -30,7 +30,7 @@ export function elSubmenu (h, menu, type = 'side') {
   // if (menu.icon) icon = <d2-icon-fa slot="title" name={ menu.icon }/>
   if (menu.icon) icon = <d2-icon-iconify slot="title" name={ menu.icon }/>
   else if (menu.iconSvg) icon = <d2-icon-svg slot="title" name={ menu.iconSvg }/>
-  else icon = <i slot="title" class="fa fa-folder-o"/>
+  else icon = <i slot="title" class="i-ri:folder-2-line"/>
   return <el-submenu
     key={ menu.path }
     index={ menu.path }>

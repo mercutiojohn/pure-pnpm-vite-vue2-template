@@ -30,15 +30,30 @@
 }
 
 // 过渡动画 缩放渐变
-.fade-scale-leave-active,
+.fade-scale-leave-active {
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 .fade-scale-enter-active {
-  transition: all .3s;
+  transition: all .01s ease;
 }
 .fade-scale-enter {
   opacity: 0;
-  transform: scale(1.2);
+  transform: scale(.98);
 }
 .fade-scale-leave-to {
   opacity: 0;
-  transform: scale(0.8);
+  transform: scale(.8);
+}
+
+.fade-mask-leave-active {
+  transition: opacity .3s;
+}
+.fade-mask-enter-active {
+  transition: opacity .1s;
+}
+.fade-mask-enter {
+  opacity: 0;
+}
+.fade-mask-leave-to {
+  opacity: 0;
 }

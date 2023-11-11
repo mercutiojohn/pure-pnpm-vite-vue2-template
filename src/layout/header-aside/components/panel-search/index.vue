@@ -1,7 +1,7 @@
 <template>
   <div class="panel-search" flex="dir:top">
-    <div class="panel-search__input-group" flex-box="0" flex="dir:top main:center cross:center" @click.self="handlePanelClick">
-      <d2-icon-svg class="panel-search__logo" name="d2-admin-text"/>
+    <div class="panel-search__input-group" flex-box="0" flex="dir:top main:center cross:center">
+      <!-- <d2-icon-svg class="panel-search__logo" name="d2-admin-text"/> -->
       <el-autocomplete
         class="panel-search__input"
         ref="input"
@@ -15,16 +15,16 @@
         @select="handleSelect">
         <d2-panel-search-item slot-scope="{ item }" :item="item"/>
       </el-autocomplete>
-      <div class="panel-search__tip">
+      <!-- <div class="panel-search__tip">
         您可以使用快捷键
         <span class="panel-search__key">{{hotkey.open}}</span>
         唤醒搜索面板，按
         <span class="panel-search__key">{{hotkey.close}}</span>
         关闭
-      </div>
+      </div> -->
     </div>
     <div v-if="resultsList.length > 0" class="panel-search__results-group" flex-box="1">
-      <el-card shadow="never">
+      <!-- <el-card shadow="never"> -->
         <div class="panel-search__results-group-inner">
           <d2-panel-search-item
             v-for="(item, index) in resultsList"
@@ -33,7 +33,7 @@
             :hover-mode="true"
             @click.native="handleResultsGroupItemClick(item.path)"/>
         </div>
-      </el-card>
+      <!-- </el-card> -->
     </div>
   </div>
 </template>
@@ -160,18 +160,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/style/unit/color.scss';
+@import '@/assets/style/fixed/el-color.scss';
 .panel-search {
-  margin: 20px;
-  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  background: #fff;
+  box-shadow: $--box-shadow-base;
+  overflow: hidden;
+  border-radius: 10px;
+  max-height: 600px;
+  min-width: 500px;
   .panel-search__input-group {
-    height: 240px;
-    .panel-search__logo {
+    width: 100%;
+    border-bottom: 1px solid #00000034;
+    /* .panel-search__logo {
       width: 80px;
       height: 80px;
       margin-bottom: 20px;
-    }
+    } */
     .panel-search__input {
-      width: 500px;
+      width: 100%;
+      ::v-deep input {
+        border: none;
+        font-size: 2em;
+        height: 2em;
+        line-height: 2em;
+      }
     }
     .panel-search__tip {
       @extend %unable-select;
@@ -189,10 +207,9 @@ export default {
     }
   }
   .panel-search__results-group {
+    width: 100%;
     overflow: auto;
-    margin-bottom: -20px;
     .panel-search__results-group-inner {
-      margin: -20px;
     }
   }
 }

@@ -56,6 +56,7 @@ export default {
 
 <style lang="scss" scoped>
 .theme-preview {
+  flex-shrink: 0;
   height: 50px;
   width: 100px;
   border-radius: 4px;
@@ -67,6 +68,7 @@ export default {
   display: flex;
   flex-direction: column;
   .theme-item {
+    overflow: hidden;
     /* min-width: 300px; */
     display: flex;
     gap: 10px;

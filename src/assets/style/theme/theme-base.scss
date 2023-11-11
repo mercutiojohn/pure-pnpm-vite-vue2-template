@@ -25,6 +25,14 @@
   }
 }
 
+.d2-contextmenu {
+  position: absolute;
+  padding: 5px 0;
+  z-index: 2018;
+  background: #FFF;
+  border: 1px solid #cfd7e5;
+  border-radius: 4px;
+}
 // Tab 栏样式
 .d2-contextmenu-list {
   .d2-contextmenu-item {
@@ -130,6 +138,20 @@
       }
     }
   }
+  // 搜索层
+  .d2-theme-container-search-layer {
+    background: #00000023;
+    display: flex;
+    padding-top: 150px;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+  }
 }
 
 // 主题公用
@@ -225,7 +247,7 @@
       // 侧边栏
       .d2-theme-container-aside {
         %d2-theme-container-aside-menu-icon {
-          width: calc($element-menu-side-icon-size + 4px);
+          width: $element-menu-side-icon-size;
           height: $element-menu-side-icon-size;
           text-align: center;
           font-size: $element-menu-side-icon-size;
@@ -239,7 +261,7 @@
             .title-collapsed {
               display: none;
             }
-            i, svg {
+            i:not(:last-child), svg {
               @extend %d2-theme-container-aside-menu-icon;
             }
           }
@@ -299,7 +321,7 @@
               width: 100%;
               text-overflow: ellipsis;
             }
-            i, svg {
+            i:not(:last-child), svg {
               margin-right: 0;
               width: $element-menu-side-collapse-icon-size;
               height: $element-menu-side-collapse-icon-size;

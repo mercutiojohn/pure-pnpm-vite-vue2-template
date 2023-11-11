@@ -46,32 +46,30 @@
         </div>
         <!-- 主体 -->
         <div class="d2-theme-container-main" flex-box="1" flex>
-          <!-- 搜索 -->
-          <transition name="fade-scale">
-            <div v-if="searchActive" class="d2-theme-container-main-layer" flex>
-              <d2-panel-search ref="panelSearch" @close="searchPanelClose"/>
-            </div>
-          </transition>
           <!-- 内容 -->
-          <transition name="fade-scale">
-            <div v-if="!searchActive" class="d2-theme-container-main-layer" flex="dir:top">
-              <!-- tab -->
-              <div class="d2-theme-container-main-header" flex-box="0">
-                <d2-tabs/>
-              </div>
-              <!-- 页面 -->
-              <div class="d2-theme-container-main-body" flex-box="1">
-                <transition :name="transitionActive ? 'fade-popup' : ''">
-                  <keep-alive :include="keepAlive">
-                    <router-view :key="routerViewKey" />
-                  </keep-alive>
-                </transition>
-              </div>
+          <div class="d2-theme-container-main-layer" flex="dir:top">
+            <!-- tab -->
+            <div class="d2-theme-container-main-header" flex-box="0">
+              <d2-tabs/>
             </div>
-          </transition>
-        </div>
+            <!-- 页面 -->
+            <div class="d2-theme-container-main-body" flex-box="1">
+              <transition :name="transitionActive ? 'fade-popup' : ''">
+                <keep-alive :include="keepAlive">
+                  <router-view :key="routerViewKey" />
+                </keep-alive>
+              </transition>
+            </div>
+          </div>
+      </div>
       </div>
     </div>
+    <!-- 搜索 -->
+    <transition name="fade-mask">
+      <div v-if="searchActive" class="d2-theme-container-search-layer" flex  @click.self="searchPanelClose">
+        <d2-panel-search ref="panelSearch"/>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -160,5 +158,5 @@ export default {
 
 <style lang="scss">
 // 注册主题
-@import '@/assets/style/theme/register.scss';
+/* @import '@/assets/style/theme/register.scss'; */
 </style>

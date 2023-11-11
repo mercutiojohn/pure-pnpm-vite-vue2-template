@@ -65,9 +65,10 @@ export default {
         preview: 'image/theme/star/preview@2x.png'
       },
       {
-        title: 'Tomorrow Night Blue (vsCode)',
-        name: 'tomorrow-night-blue',
-        preview: 'image/theme/tomorrow-night-blue/preview@2x.png'
+        title: 'Tik',
+        name: 'tik',
+        backgroundImage: 'image/theme/tik/bg.png',
+        preview: 'image/theme/tik/preview@2x.png'
       }
     ]
   },

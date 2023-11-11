@@ -22,5 +22,8 @@ $--box-shadow-base: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1
 $--box-shadow-dark: $--box-shadow-base;
 $--box-shadow-light: $--box-shadow-base;
 
+/* Radius */
+$--border-radius-base: 0.25rem !default;
+
 /* 改变 icon 字体路径变量，必需 */
 $--font-path: 'element-ui/lib/theme-chalk/fonts';
