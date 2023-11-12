@@ -29,7 +29,7 @@ export default {
     { path: 'db/page-public', name: 'demo-playground-db-page-public', component: () => import('@/views/demo/playground/db/page-public/index.vue'), meta: { ...meta, title: '路由存储' } },
     { path: 'db/page-user', name: 'demo-playground-db-page-user', component: () => import('@/views/demo/playground/db/page-user/index.vue'), meta: { ...meta, title: '私有路由存储' } },
     { path: 'db/page-snapshot-public', name: 'demo-playground-db-page-snapshot-public', component: () => import('@/views/demo/playground/db/page-snapshot-public/index.vue'), meta: { ...meta, title: '路由快照' } },
-    { path: 'db/page-snapshot-user', name: 'demo-playground-db-page-snapshot-user', component: () => import('@/views/demo/playground/db/page-snapshot-user/index'), meta: { ...meta, title: '私有路由快照' } },
+    { path: 'db/page-snapshot-user', name: 'demo-playground-db-page-snapshot-user', component: () => import('@/views/demo/playground/db/page-snapshot-user/index.vue'), meta: { ...meta, title: '私有路由快照' } },
     { path: 'log/ajax', name: 'demo-playground-log-ajax', component: () => import('@/views/demo/playground/log/ajax/index.vue'), meta: { ...meta, title: 'Ajax 错误' } },
     { path: 'log/console', name: 'demo-playground-log-console', component: () => import('@/views/demo/playground/log/console/index.vue'), meta: { ...meta, title: '控制台日志' } },
     { path: 'log/error', name: 'demo-playground-log-error', component: () => import('@/views/demo/playground/log/error/index.vue'), meta: { ...meta, title: '错误捕捉' } },
