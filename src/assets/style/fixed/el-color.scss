@@ -6,16 +6,16 @@ $--color-danger: $color-danger;
 $--color-info: $color-info;
 
 /* Font Color */
-$--color-text-primary: #303133;
-$--color-text-regular: #333238;
-$--color-text-secondary: #333238;
-$--color-text-placeholder: #89888D;
+$--color-text-primary: $color-text-main;
+$--color-text-regular: $color-text-normal;
+$--color-text-secondary: $color-text-sub;
+$--color-text-placeholder: $color-text-placeholder;
 
 /* Border Color */
-$--border-color-base: #BFBFC3;
-$--border-color-light: #E4E7ED;
-$--border-color-lighter: #DCDCDE;
-$--border-color-extra-light: #F2F6FC;
+$--border-color-base: $color-border-1;
+$--border-color-light: $color-border-2;
+$--border-color-lighter: $color-border-3;
+$--border-color-extra-light: $color-border-4;
 
 /* Shadows */
 $--box-shadow-base: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px !default;
