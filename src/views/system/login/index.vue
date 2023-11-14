@@ -1,16 +1,30 @@
 <template>
   <div class="page-login">
-    <div class="page-login--layer page-login--layer-area">
-      <ul class="circles">
-        <li v-for="n in 10" :key="n"></li>
-      </ul>
-    </div>
-    <div
-      class="page-login--layer page-login--layer-time"
-      flex="main:center cross:center">
-      {{time}}
-    </div>
-    <div class="page-login--layer">
+    <div class="page-login--layer page-login--main">
+      <div class="page-login--bg page-login--layer-area">
+        <el-carousel height="100vh">
+          <el-carousel-item>
+            <ul class="circles">
+              <li v-for="n in 10" :key="n"></li>
+            </ul>
+          </el-carousel-item>
+          <el-carousel-item>
+            <div
+              class="page-login--layer page-login--layer-time"
+              flex="main:center cross:center">
+              {{time}}
+            </div>
+          </el-carousel-item>
+        </el-carousel>
+        <!-- <ul class="circles">
+          <li v-for="n in 10" :key="n"></li>
+        </ul>
+        <div
+          class="page-login--layer page-login--layer-time"
+          flex="main:center cross:center">
+          {{time}}
+        </div> -->
+      </div>
       <div
         class="page-login--content"
         flex="dir:top main:justify cross:stretch box:justify">
@@ -21,12 +35,12 @@
         </div>
         <div
           class="page-login--content-main"
-          flex="dir:top main:center cross:center">
+          flex="dir:top main:center cross:start">
           <!-- logo -->
           <img class="page-login--logo" src="./image/logo@2x.png">
           <!-- form -->
           <div class="page-login--form">
-            <el-card shadow="never">
+            <!-- <el-card shadow="never"> -->
               <el-form
                 ref="loginForm"
                 label-position="top"
@@ -38,7 +52,7 @@
                     type="text"
                     v-model="formLogin.username"
                     placeholder="用户名">
-                    <i slot="prepend" class="fa fa-user-circle-o"></i>
+                    <i slot="prepend" class="i-ri:user-3-line w-16px h-16px block"></i>
                   </el-input>
                 </el-form-item>
                 <el-form-item prop="password">
@@ -46,7 +60,7 @@
                     type="password"
                     v-model="formLogin.password"
                     placeholder="密码">
-                    <i slot="prepend" class="fa fa-keyboard-o"></i>
+                    <i slot="prepend" class="i-ri:lock-line w-16px h-16px block"></i>
                   </el-input>
                 </el-form-item>
                 <el-form-item prop="code">
@@ -67,7 +81,7 @@
                   登录
                 </el-button>
               </el-form>
-            </el-card>
+            <!-- </el-card> -->
             <p
               class="page-login--options"
               flex="main:justify cross:center">
@@ -239,7 +253,8 @@ export default {
 <style lang="scss">
 .page-login {
   @extend %unable-select;
-  $backgroundColor: #F0F2F5;
+  $backgroundColor: #fff;
+  $backgroundColorDark: #F0F2F5;
   // ---
   background-color: $backgroundColor;
   height: 100%;
@@ -259,19 +274,29 @@ export default {
     color: rgba(0, 0, 0, 0.03);
     overflow: hidden;
   }
+  .page-login--main {
+    display: flex;
+  }
+  .page-login--bg {
+    width: 100%;
+    background: $backgroundColorDark;
+    overflow: hidden;
+  }
   // 登陆页面控件的容器
   .page-login--content {
+    min-width: 600px;
+    width: 40%;
     height: 100%;
     min-height: 500px;
   }
   // header
   .page-login--content-header {
-    padding: 1em 0;
+    padding: 2em 2em 20px 2em;
     .page-login--content-header-motto {
       margin: 0px;
-      padding: 0px;
+      padding: 0;
       color: $color-text-normal;
-      text-align: center;
+      text-align: left;
       font-size: 12px;
     }
   }
@@ -280,6 +305,9 @@ export default {
     width: 240px;
     margin-bottom: 2em;
     margin-top: -2em;
+  }
+  .page-login--content-main {
+    padding: 0 2em;
   }
   // 登录表单
   .page-login--form {
@@ -342,14 +370,14 @@ export default {
   }
   // footer
   .page-login--content-footer {
-    padding: 1em 0;
+    padding: 20px 2em 2em 2em;
     .page-login--content-footer-locales {
       padding: 0px;
       margin: 0px;
       margin-bottom: 15px;
       font-size: 12px;
       line-height: 12px;
-      text-align: center;
+      text-align: left;
       color: $color-text-normal;
       a {
         color: $color-text-normal;
@@ -365,7 +393,7 @@ export default {
       margin-bottom: 10px;
       font-size: 12px;
       line-height: 12px;
-      text-align: center;
+      text-align: left;
       color: $color-text-normal;
       a {
         color: $color-text-normal;
@@ -376,10 +404,10 @@ export default {
       margin: 0px;
       font-size: 12px;
       line-height: 12px;
-      text-align: center;
+      text-align: left;
       a {
         color: $color-text-normal;
-        margin: 0 1em;
+        margin: 0 2em 0 0;
       }
     }
   }
