@@ -16,14 +16,6 @@
             </div>
           </el-carousel-item>
         </el-carousel>
-        <!-- <ul class="circles">
-          <li v-for="n in 10" :key="n"></li>
-        </ul>
-        <div
-          class="page-login--layer page-login--layer-time"
-          flex="main:center cross:center">
-          {{time}}
-        </div> -->
       </div>
       <div
         class="page-login--content"
