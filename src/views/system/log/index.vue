@@ -15,7 +15,8 @@
       <!-- 信息 -->
       <el-table-column
         prop="message"
-        label="Message">
+        label="Message"
+        show-overflow-tooltip>
       </el-table-column>
       <!-- 触发页面 -->
       <el-table-column
