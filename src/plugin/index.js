@@ -9,6 +9,10 @@ import Vue from 'vue'
 import d2Admin from '@/plugin/d2admin/index'
 Vue.use(d2Admin)
 
+// Electron
+import ipcRenderer from '@/plugin/ipcRenderer/index'
+Vue.use(ipcRenderer)
+
 // 字体 Fonts
 import '@fontsource-variable/inter'
 import '@fontsource-variable/fira-code'

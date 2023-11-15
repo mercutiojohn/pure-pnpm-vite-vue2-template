@@ -29,6 +29,7 @@
           <!-- <d2-header-locales/> -->
           <!-- <d2-header-color/> -->
           <d2-header-user/>
+          <d2-header-window-controls v-if="isElectron"/>
         </div>
       </div>
       <!-- 下面 主体 -->
@@ -85,6 +86,7 @@ import d2HeaderTheme from './components/header-theme/index.vue'
 import d2HeaderUser from './components/header-user/index.vue'
 import d2HeaderLog from './components/header-log/index.vue'
 import d2HeaderColor from './components/header-color/index.vue'
+import d2HeaderWindowControls from './components/header-window-controls/index.vue'
 import { mapState, mapGetters, mapActions } from 'vuex'
 import mixinSearch from './mixins/search'
 export default {
@@ -103,7 +105,8 @@ export default {
     d2HeaderTheme,
     d2HeaderUser,
     d2HeaderLog,
-    d2HeaderColor
+    d2HeaderColor,
+    d2HeaderWindowControls
   },
   data () {
     return {
@@ -140,6 +143,9 @@ export default {
       return this.themeActiveSetting.backgroundImage
         ? { backgroundImage: `url('${this.$baseUrl}${this.themeActiveSetting.backgroundImage}')` }
         : {}
+    },
+    isElectron () {
+      return window.require && window.require('electron') ? true : false
     }
   },
   methods: {
