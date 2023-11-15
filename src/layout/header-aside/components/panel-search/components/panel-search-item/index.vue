@@ -1,23 +1,23 @@
 <template>
   <transition name="fade-scale">
     <div class="d2-panel-search-item" v-show="show" :class="hoverMode ? 'can-hover' : ''" flex>
-      <div class="d2-panel-search-item__icon" flex-box="0">
+      <div class="d2-panel-search-item__icon pl-20px" flex-box="0">
         <div class="d2-panel-search-item__icon-box" flex="main:center cross:center">
-          <d2-icon-fa v-if="item.icon" :name="item.icon"/>
+          <d2-icon v-if="item.icon" :name="item.icon"/>
           <d2-icon-svg v-else-if="item.iconSvg" :name="item.iconSvg"/>
-          <d2-icon v-else name="i-fa-file-o"/>
+          <d2-icon v-else name="i-ri:file-line"/>
         </div>
       </div>
-      <div class="d2-panel-search-item__info" flex-box="1" flex="dir:top">
+      <div class="d2-panel-search-item__info" flex-box="1" flex="dir:left">
         <div class="d2-panel-search-item__info-title" flex-box="1" flex="cross:center">
           <span>{{item.title}}</span>
         </div>
-        <div class="d2-panel-search-item__info-fullTitle" flex-box="0">
+        <div class="d2-panel-search-item__info-fullTitle pr-20px" flex-box="0" flex="cross:center">
           <span>{{item.fullTitle}}</span>
         </div>
-        <div class="d2-panel-search-item__info-path" flex-box="0">
+        <!-- <div class="d2-panel-search-item__info-path" flex-box="0">
           <span>{{item.path}}</span>
-        </div>
+        </div> -->
       </div>
     </div>
   </transition>
@@ -51,7 +51,7 @@ export default {
 
 <style lang="scss" scoped>
 .d2-panel-search-item {
-  height: 64px;
+  height: 30px;
   margin: 0px -20px;
   &.can-hover {
     @extend %unable-select;
@@ -61,7 +61,7 @@ export default {
       .d2-panel-search-item__icon {
         .d2-panel-search-item__icon-box {
           i {
-            font-size: 24px;
+            /* font-size: 24px; */
             color: $color-primary;
           }
         }
@@ -80,11 +80,12 @@ export default {
     }
   }
   .d2-panel-search-item__icon {
-    width: 64px;
+    padding-left: 10px;
+    width: 30px;
     .d2-panel-search-item__icon-box {
-      height: 64px;
-      width: 64px;
-      border-right: 1px solid $color-border-3;
+      height: 30px;
+      width: 30px;
+      /* border-right: 1px solid $color-border-3; */
       i {
         font-size: 20px;
         color: $color-text-sub;
@@ -98,9 +99,9 @@ export default {
   .d2-panel-search-item__info {
     margin-left: 10px;
     .d2-panel-search-item__info-title {
-      font-size: 16px;
-      line-height: 16px;
-      font-weight: bold;
+      font-size: 14px;
+      line-height: 14px;
+      /* font-weight: bold; */
       color: $color-text-normal;
     }
     .d2-panel-search-item__info-fullTitle {

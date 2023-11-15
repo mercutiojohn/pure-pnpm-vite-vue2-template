@@ -182,15 +182,17 @@
       // 折叠侧边栏切换按钮
       .toggle-aside-btn {
         float: left;
-        height: 60px;
-        width: 60px;
+        height: $element-menu-header-height;
+        margin: calc((60px - $element-menu-header-height) / 2);
+        width: $element-menu-header-height;
+        border-radius: $--border-radius-base;
         display: flex;
         justify-content: center;
         align-items: center;
         @extend %unable-select;
         i {
           font-size: 20px;
-          margin-top: 4px;
+          // margin-top: 4px;
         }
       }
       // [菜单] 顶栏

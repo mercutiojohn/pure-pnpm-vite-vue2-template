@@ -75,9 +75,9 @@
               </el-form>
             <!-- </el-card> -->
             <p
-              class="page-login--options"
-              flex="main:justify cross:center">
-              <span><d2-icon name="i-fa-question-circle"/> 忘记密码</span>
+              class="page-login--options gap-20px mt-10px!"
+              flex="main:start cross:center">
+              <span><d2-icon name="i-fa-question-circle inline-block"/> 忘记密码</span>
               <span>注册用户</span>
             </p>
             <!-- quick login -->
