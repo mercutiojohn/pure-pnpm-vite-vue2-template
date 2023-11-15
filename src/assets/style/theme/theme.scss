@@ -139,6 +139,46 @@
         }
       }
     }
+    .menu-function {
+      .right-menu-frame {
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        justify-content: flex-end;
+        &.light{
+          .frame-button::before{
+            color: #000;
+          }
+        }
+        .frame-button {
+          background: $theme-header-item-background-color;
+          &:hover {
+            background: $theme-header-item-background-color-hover;
+          }
+          i {
+            color: $theme-header-item-color;
+            &:hover {
+              color: $theme-header-item-color-hover;
+            }
+          }
+          &.close {
+            &:hover {
+              background: #c42b1c;
+              i {
+                color:#fff;
+              }
+            }
+            &:active {
+              background: #c94132;
+            }
+            &:hover, &:active {
+              i {
+                color:#fff;
+              }
+            }
+          }
+        }
+      }
+    }
     // 顶栏菜单
     .el-menu {
       .el-menu-item {

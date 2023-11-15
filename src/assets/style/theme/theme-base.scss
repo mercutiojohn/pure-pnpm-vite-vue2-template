@@ -65,7 +65,15 @@
   .d2-layout-header-aside-content {
     @extend %full;
     .d2-theme-header {
+      -webkit-app-region: drag;
+      user-select: none;
       height: 60px;
+      a {
+        pointer-events: none;
+      }
+      img {
+        pointer-events: none;
+      }
       .d2-theme-header-menu {
         overflow: hidden;
         &.is-scrollable {
@@ -107,6 +115,29 @@
           right: 0;
           border-top-right-radius: 2px;
           border-bottom-right-radius: 2px;
+        }
+      }
+      .menu-function {
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        height: 100%;
+        .right-menu-frame {
+          .frame-button {
+            display: block;
+            text-align: center;
+            width: 45px;
+            transition: background 0.1s ease;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-app-region: no-drag;
+            i {
+              display: block;
+              width: 16px;
+              height: 16px;
+            }
+          }
         }
       }
     }
