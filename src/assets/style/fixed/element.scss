@@ -128,6 +128,8 @@ $shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 5px 1
   }
 }
 
+/* Dialog 样式革新 */
+
 .el-dialog {
   border-radius: 5px;
   box-shadow: $shadow;
@@ -165,7 +167,8 @@ $shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 5px 1
 .el-dialog__headerbtn:active {
     background: #0000002f;
 }
-// 样式革新
+
+/* Popper 样式革新 */
 .el-popper {
   margin: 2px 0 !important;
   // &[x-placement^=bottom] {
