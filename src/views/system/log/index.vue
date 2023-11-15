@@ -12,33 +12,56 @@
         label="Time"
         width="140">
       </el-table-column>
-      <!-- 信息 -->
+      <!-- 类型 -->
       <el-table-column
-        prop="message"
-        label="Message"
-        show-overflow-tooltip>
-      </el-table-column>
-      <!-- 触发页面 -->
-      <el-table-column
-        label="Url"
+        prop="type"
+        label="Type"
         align="center"
-        min-width="200">
+        width="100">
         <template slot-scope="scope">
-          {{get(scope.row, 'meta.url')}}
+          <el-tag
+            :type="scope.row.type"
+            size="mini">
+            {{scope.row.type}}
+          </el-tag>
         </template>
       </el-table-column>
       <!-- 触发组件 -->
       <el-table-column
         label="Tag"
         align="center"
-        min-width="120">
+        width="150"
+        show-overflow-tooltip>
         <template slot-scope="scope">
-          <el-tag
-            v-if="get(scope.row, 'meta.instance.$vnode.componentOptions.tag')"
+          <!-- <el-tag
+            v-if="getTag(scope.row)"
             type="info"
-            size="mini">
-            &#60;{{get(scope.row, 'meta.instance.$vnode.componentOptions.tag')}}&gt;
-          </el-tag>
+            size="mini"> -->
+            &#60;{{getTag(scope.row)}}&gt;
+          <!-- </el-tag> -->
+        </template>
+      </el-table-column>
+      <!-- 信息 -->
+      <el-table-column
+        prop="message"
+        label="Message"
+        show-overflow-tooltip>
+      </el-table-column>
+      <el-table-column type="expand">
+        <template slot-scope="props">
+          <d2-highlight :code="props.row.message"/>
+          <!-- <d2-highlight :code="props.row.meta"/> -->
+          <!-- <pre v-html="props.row.message"></pre> -->
+        </template>
+      </el-table-column>
+      <!-- 触发页面 -->
+      <el-table-column
+        label="Url"
+        align="left"
+        width="350"
+        show-overflow-tooltip>
+        <template slot-scope="scope">
+          {{get(scope.row, 'meta.url')}}
         </template>
       </el-table-column>
       <!-- 查看详情 -->
@@ -70,12 +93,20 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import { mapState } from 'vuex'
 import { get } from 'lodash'
+import vueJsonTreeView from 'vue-json-tree-view'
+Vue.use(vueJsonTreeView)
 export default {
   data () {
     return {
-      uploading: false
+      uploading: false,
+      treeOptions: {
+        maxDepth: 10,
+        rootObjectKey: 'error111',
+        modifiable: false
+      },
     }
   },
   computed: {
@@ -85,6 +116,10 @@ export default {
   },
   methods: {
     get,
+    getTag(row) {
+      // console.log('[getTag]', row, this.get(row, 'meta.vm.$vnode.componentOptions.tag'))
+      return this.get(row, 'meta.vm.$vnode.componentOptions.tag')
+    },
     handleShowMore (log) {
       // 打印一条日志的所有信息到控制台
       this.$notify({
@@ -116,6 +151,9 @@ export default {
         })
       }, 3000)
     }
+  },
+  mounted() {
+    console.log('[log]', this.log)
   }
 }
 </script>
