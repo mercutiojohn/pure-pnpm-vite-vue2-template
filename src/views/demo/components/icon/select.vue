@@ -11,7 +11,7 @@
         <template v-else>未选择</template>
       </p>
     </div>
-    <d2-icon-fa-select v-model="icon"/>
+    <d2-icon-select v-model="icon"/>
     <div class="title-group">
       <p class="title">用户可以输入</p>
       <p class="sub-title">
@@ -22,7 +22,7 @@
         <template v-else>未选择</template>
       </p>
     </div>
-    <d2-icon-fa-select v-model="icon2" :user-input="true"/>
+    <d2-icon-select v-model="icon2" :user-input="true"/>
   </d2-container>
 </template>
 

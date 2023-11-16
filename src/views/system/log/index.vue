@@ -28,17 +28,12 @@
       </el-table-column>
       <!-- 触发组件 -->
       <el-table-column
-        label="Tag"
+        label="Component"
         align="center"
         width="150"
         show-overflow-tooltip>
         <template slot-scope="scope">
-          <!-- <el-tag
-            v-if="getTag(scope.row)"
-            type="info"
-            size="mini"> -->
-            &#60;{{getTag(scope.row)}}&gt;
-          <!-- </el-tag> -->
+          {{getTag(scope.row) && `<${getTag(scope.row)}>`}}
         </template>
       </el-table-column>
       <!-- 信息 -->
@@ -48,11 +43,12 @@
         show-overflow-tooltip>
       </el-table-column>
       <el-table-column type="expand">
-        <template slot-scope="props">
-          <d2-highlight :code="props.row.message"/>
-          <!-- <d2-highlight :code="props.row.meta"/> -->
+        <div slot-scope="props" style="display: flex; flex-direction: column; gap: 10px;">
+          <d2-highlight v-if="props.row.meta.trace" :code="props.row.meta.trace"/>
+          <d2-highlight v-else :code="props.row.message"/>
+          <span style="text-align: right;" v-if="props.row.meta.source">{{props.row.meta.source}}</span>
           <!-- <pre v-html="props.row.message"></pre> -->
-        </template>
+        </div>
       </el-table-column>
       <!-- 触发页面 -->
       <el-table-column
@@ -72,10 +68,9 @@
         width="100">
         <template slot-scope="scope">
           <el-button
-            type="primary"
             size="mini"
             @click="handleShowMore(scope.row)">
-            <d2-icon name="i-fa-eye"/>
+            <d2-icon name="i-ri:terminal-line w-16px h-16px"/>
           </el-button>
         </template>
       </el-table-column>
