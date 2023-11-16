@@ -6,6 +6,7 @@
     <div class="d2-layout-header-aside-content" flex="dir:top">
       <!-- 顶栏 -->
       <div class="d2-theme-header" :style="{ opacity: this.searchActive ? 0.5 : 1 }" flex-box="0" flex>
+        <div :class="`window-controls-area ${currPlatform}`" v-if="isElectron && currPlatform === 'mac'"></div>
         <router-link
           to="/index"
           :class="{'logo-group': true, 'logo-transition': asideTransition}"
@@ -29,7 +30,7 @@
           <!-- <d2-header-locales/> -->
           <!-- <d2-header-color/> -->
           <d2-header-user/>
-          <d2-header-window-controls v-if="isElectron"/>
+          <div :class="`window-controls-area ${currPlatform}`" v-if="isElectron && currPlatform === 'windows'"></div>
         </div>
       </div>
       <!-- 下面 主体 -->
@@ -127,6 +128,9 @@ export default {
     ...mapGetters('d2admin', {
       themeActiveSetting: 'theme/activeSetting'
     }),
+    ...mapState('d2admin/ua', {
+      uaData: 'data'
+    }),
     /**
      * @description 用来实现带参路由的缓存
      */
@@ -146,6 +150,22 @@ export default {
     },
     isElectron () {
       return window.require && window.require('electron') ? true : false
+    },
+    currPlatform() {
+      if (this.uaData && this.uaData.os) {
+        switch(this.uaData.os.name) {
+          case 'Windows':
+            return 'windows'
+          case 'Linux':
+            return 'linux'
+          case 'Mac OS X':
+            return 'mac'
+          case 'Mac OS':
+            return 'mac'
+          default:
+            return 'windows'
+        }
+      }
     }
   },
   methods: {

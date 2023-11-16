@@ -1,3 +1,78 @@
+.window-control-float {
+  -webkit-app-region: drag;
+  display: block;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  z-index: 20000;
+  &.windows {
+    right: 0;
+  }
+  &.mac {
+    left: 0;
+  }
+}
+.window-controls-area {
+  flex-shrink: 0;
+  &.windows {
+    width: 135px;
+  }
+  &.mac {
+    width: 70px;
+  }
+}
+.menu-function {
+  // pointer-events: all;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  height: 100%;
+  .right-menu-frame {
+    &.windows {
+      .frame-button {
+        display: block;
+        text-align: center;
+        width: 45px;
+        transition: background 0.1s ease;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-app-region: no-drag;
+        i {
+          display: block;
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+    &.mac {
+      display: flex;
+      align-items: center;
+      margin-left: 5px;
+      .frame-button {
+        display: block;
+        text-align: center;
+        width: 12px;
+        height: 12px;
+        margin: 0 3px;
+        border-radius: 50%;
+        background: #cecece;
+        border: 0.5px solid #afafaf;
+        // transition: background 0.1s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-app-region: no-drag;
+        i {
+          display: block;
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
+    
+  }
+}
 // 减小弹出菜单的项目高度
 .el-menu--popup {
   .el-menu-item {
@@ -115,29 +190,6 @@
           right: 0;
           border-top-right-radius: 2px;
           border-bottom-right-radius: 2px;
-        }
-      }
-      .menu-function {
-        display: -webkit-flex; /* Safari */
-        display: flex;
-        height: 100%;
-        .right-menu-frame {
-          .frame-button {
-            display: block;
-            text-align: center;
-            width: 45px;
-            transition: background 0.1s ease;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            -webkit-app-region: no-drag;
-            i {
-              display: block;
-              width: 16px;
-              height: 16px;
-            }
-          }
         }
       }
     }

@@ -1,5 +1,103 @@
 // 每个主题特有的设置
 .theme-#{$theme-name} {
+  .menu-function {
+    &.windows {
+      .right-menu-frame {
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        justify-content: flex-end;
+        &.light{
+          .frame-button::before{
+            color: #000;
+          }
+        }
+        .frame-button {
+          background: $theme-header-item-background-color;
+          &:hover {
+            background: $theme-header-item-background-color-hover;
+          }
+          i {
+            color: $theme-header-item-color;
+            &:hover {
+              color: $theme-header-item-color-hover;
+            }
+          }
+          &.close {
+            &:hover {
+              background: #c42b1c;
+              i {
+                color:#fff;
+              }
+            }
+            &:active {
+              background: #c94132;
+            }
+            &:hover, &:active {
+              i {
+                color:#fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.mac {
+      .right-menu-frame {
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        justify-content: flex-end;
+        &.light{
+          .frame-button::before{
+            color: #000;
+          }
+        }
+        &:hover {
+          .frame-button {
+            background: $theme-header-item-background-color-hover;
+            i {
+              color: $theme-header-item-color-hover;
+            }
+            &.close {
+              background: #ec6a5e;
+              border-color: #ec6a5e !important;
+              i {
+                color: #68110a!important;
+              }
+              &:active {
+                background: #b35046;
+              }
+            }
+            &.minimize {
+              background: #f4bf4f;
+              border-color: #f4bf4f !important;
+              i {
+                color: #8f591c!important;
+              }
+              &:active {
+                background: #b68e3a;
+              }
+            }
+            &.maximize {
+              background: #61c554;
+              border-color: #61c554 !important;
+              i {
+                color: #296017!important;
+              }
+              &:active {
+                background: #48933f;
+              }
+            }
+          }
+        }
+        .frame-button {
+          background: $theme-header-item-background-color;
+          i {
+            color: transparent;
+          }
+        }
+      }
+    }
+  }
   // Tab 栏样式
   .d2-contextmenu {
     box-shadow: $--box-shadow-base;
@@ -136,46 +234,6 @@
         color: $theme-header-item-color;
         &:hover {
           color: $theme-header-item-color-hover;
-        }
-      }
-    }
-    .menu-function {
-      .right-menu-frame {
-        display: -webkit-flex; /* Safari */
-        display: flex;
-        justify-content: flex-end;
-        &.light{
-          .frame-button::before{
-            color: #000;
-          }
-        }
-        .frame-button {
-          background: $theme-header-item-background-color;
-          &:hover {
-            background: $theme-header-item-background-color-hover;
-          }
-          i {
-            color: $theme-header-item-color;
-            &:hover {
-              color: $theme-header-item-color-hover;
-            }
-          }
-          &.close {
-            &:hover {
-              background: #c42b1c;
-              i {
-                color:#fff;
-              }
-            }
-            &:active {
-              background: #c94132;
-            }
-            &:hover, &:active {
-              i {
-                color:#fff;
-              }
-            }
-          }
         }
       }
     }

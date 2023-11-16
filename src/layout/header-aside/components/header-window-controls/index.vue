@@ -1,9 +1,14 @@
 <template>
-  <div class="menu-function windows">
-    <div :class="{'right-menu-frame':true,'light':lightMode}">
-      <div class="frame-button minimize" @click="setFrame('min')"><i v-if="showMinimize" class=" i-fluent:minimize-24-regular"></i></div>
-      <div class="frame-button maximize" @click="setFrame('plus')"><i v-if="showMaximize" :class="'' + (isMax?' i-fluent:restore-24-regular':' i-fluent:maximize-24-regular')"></i></div>
-      <div class="frame-button close" @click="setFrame('close')"><i class="i-fluent:dismiss-24-regular"></i></div>
+  <div :class="`menu-function ${currPlatform}`">
+    <div :class="{'right-menu-frame':true,'light':lightMode}" class="windows" v-if="isElectron && currPlatform === 'windows'">
+      <div class="frame-button windows minimize" @click="setFrame('min')"><i v-if="showMinimize" class=" i-fluent:minimize-24-regular"></i></div>
+      <div class="frame-button windows maximize" @click="setFrame('plus')"><i v-if="showMaximize" :class="'' + (isMax?' i-fluent:restore-24-regular':' i-fluent:maximize-24-regular')"></i></div>
+      <div class="frame-button windows close" @click="setFrame('close')"><i class="i-fluent:dismiss-24-regular"></i></div>
+    </div>
+    <div :class="{'right-menu-frame':true,'light':lightMode}" class="mac" v-if="isElectron && currPlatform === 'mac'">
+      <div class="frame-button mac close" @click="setFrame('close')"><i class="i-ion:close-round"></i></div>
+      <div class="frame-button mac minimize" @click="setFrame('min')"><i v-if="showMinimize" class="i-ion:minus-round"></i></div>
+      <div class="frame-button mac maximize" @click="setFrame('plus')"><i v-if="showMaximize" :class="(isMax?'i-ion:plus-round':'i-ion:plus-round')"></i></div>
     </div>
   </div>
 </template>
@@ -11,7 +16,7 @@
 <script>
 import { ipcApiCommonRoute } from '@/api/_local/ipcApiCommonRoute.js'
 // import { ipcRenderer } from 'electron'
-// import { mapState, mapActions } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 export default {
   data () {
     return {
@@ -38,6 +43,28 @@ export default {
   },
   computed: {
     // ...mapState('d2admin/user', ['info']),
+    ...mapState('d2admin/ua', {
+      uaData: 'data'
+    }),
+    isElectron () {
+      return window.require && window.require('electron') ? true : false
+    },
+    currPlatform() {
+      if (this.uaData && this.uaData.os) {
+        switch(this.uaData.os.name) {
+          case 'Windows':
+            return 'windows'
+          case 'Linux':
+            return 'linux'
+          case 'Mac OS X':
+            return 'mac'
+          case 'Mac OS':
+            return 'mac'
+          default:
+            return 'windows'
+        }
+      }
+    }
   },
   methods: {
     // ...mapActions('d2admin/account', ['logout']),
